@@ -68,10 +68,13 @@ Instead of typing into the command line you will find this script here: `~/pract
 
 **_Questions:_**
 > (6) What are the results?
+
 >   BETA
+
 >   95% CI
+
 >   PVALUE
 
-Write a sentence that fully describes this result (think about which allele is the BMI increasing allele).
+> (7) Write a sentence that fully describes this result (think about which allele is the BMI increasing allele).
 
 
