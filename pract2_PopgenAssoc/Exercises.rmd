@@ -53,7 +53,9 @@ The plink command for estimating Hardy Weinberg Statistics is `--hardy`. Run a p
 There are many other summary statistics that Plink can estimate. If you have time have a look at the Plink webpage <http://pngu.mgh.harvard.edu/~purcell/plink/summary.shtml> and try some others out.
 
 #Exercise 3 - Association testing with Plink
-Here we will just do a single SNP association with BMI. This will be a simple linear regression with BMI as the outcome (dependent variable), rs3751812 as the SNP exposure of interest (independent variable) and sex and age as covariates.  
+Here we will just do a single SNP association with BMI. 
+
+This will be a simple linear regression with BMI as the outcome (dependent variable), rs3751812 as the SNP exposure of interest (independent variable) and sex and age as covariates.  
 
 Because our dataset contains thousands of SNPs we will use `--snp` to define the single SNP of interest. 
 
@@ -70,7 +72,9 @@ Until now we have not used any phenotype data. The phenotype data is stored in `
 
 Use the following command to run the association. Some parts have been left blank for you to fill in. 
 
-Instead of typing into the command line you will find this script here: `~/pract2_PopgenAssoc/scripts/assoc.sh` 
+Instead of typing into the command line you will find this script here: 
+
+`~/pract2_PopgenAssoc/scripts/assoc.sh` 
 
 Edit using `pico` and save, before running by typing `./assoc.sh`
 
