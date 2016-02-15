@@ -5,6 +5,12 @@
 3. Produce Manhattan & QQ plots
 4. Interpret GWAS results
 
+#Log In
+Log into bluecrystal using PuTTY.
+
+Run the following command to access a compute node:
+`qsub -I -q teaching -l nodes=1:ppn=1, walltime=02:00:00`
+
 #Data
 Data for this practical is available in `pract3_GWAS/data`
 
@@ -75,7 +81,7 @@ Look at the results file using the following commands:
 
 `awk '$9<0.00000005' bmi_clean.assoc.linear.add | wc -l`
 
-`grep -v NA bmi_clean.assoc.linear | sort -g -k 9 | head`
+`grep -v NA bmi_clean.assoc.linear.add | sort -g -k 9 | head`
 
 **_Questions:_**
 > (4) How many genome-wide significant (p<5x10-8) signals do you have?
