@@ -18,7 +18,7 @@ If you get really stuck, example scripts and ready-made output are available in 
 If you are starting a new PuTTY session you may need reload plink.
 `Module load apps/plink2`
 
-#Exercise 1
+#Exercise 1 - Unclean GWAS
 First, we will run a GWAS without doing any cleaning to the dataset.
 
 Take a look at the data `data/geno_unclean.bim` & `.fam`
@@ -36,7 +36,7 @@ Open WINSCP (in windows) and open the graphs you’ve just created.
 **_Question:_**
 > (3) How can we tell there is a problem with this GWAS?
 
-#Exercise 2. Cleaning the GWAS data
+#Exercise 2 - Cleaning the GWAS data
 There are many steps to a good QC procedure (see Weale 2010. Quality control for genome-wide association studies. Methods in Molecular Biology 628:341-372). Here we assume that related individuals and non-white Europeans have already been removed and proceed with the final steps of the QC.
 
 **_Question:_**
@@ -54,7 +54,7 @@ Now look at the `qc.sh` script to see the suggested exclusions for this dataset.
 
 Open WINSCP (in windows) and open the graphs you’ve just created.
 
-#Exercise 3. Running the clean GWAS
+#Exercise 3 - Running the clean GWAS
 We will now run the final ‘clean’ GWAS for BMI.
 
 To do this, copy the `unclean_gwas.sh` to a new script using `cp unclean_gwas.sh {newfilename}`
