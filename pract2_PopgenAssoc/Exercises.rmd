@@ -53,7 +53,9 @@ The plink command for estimating Hardy Weinberg Statistics is `--hardy`. Run a p
 There are many other summary statistics that Plink can estimate. If you have time have a look at the Plink webpage <http://pngu.mgh.harvard.edu/~purcell/plink/summary.shtml> and try some others out.
 
 #Exercise 3 - Association testing with Plink
-Here we will just do a single SNP association with BMI. This will be a simple linear regression with BMI as the outcome (dependent variable), rs3751812. As the SNP exposure of interest (independent variable) and sex and age as covariates.  Because our dataset contains thousands of SNPs we will use `--snp` to define the single SNP of interest. 
+Here we will just do a single SNP association with BMI. This will be a simple linear regression with BMI as the outcome (dependent variable), rs3751812 as the SNP exposure of interest (independent variable) and sex and age as covariates.  
+
+Because our dataset contains thousands of SNPs we will use `--snp` to define the single SNP of interest. 
 
 First use `grep` to have a look at the SNP of interest in the `.bim`, `.freq` and `.hwe` files.
 
