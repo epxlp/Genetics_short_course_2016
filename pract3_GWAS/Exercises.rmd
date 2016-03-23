@@ -87,11 +87,11 @@ Look at the results file using the following commands:
 `grep -v NA bmi_clean.assoc.linear.add | sort -g -k 9 | head`
 
 **_Questions:_**
-> (4) How many genome-wide significant (p<5x10-8) signals do you have?
+> (5) How many genome-wide significant (p<5x10-8) signals do you have?
 
-> (5) Are these likely to all be independent?
+> (6) Are these likely to all be independent?
 
-> (6) What is the top signal?
+> (7) What is the top signal?
 
-> (7) How might we go about confirming this finding?
+> (8) How might we go about confirming this finding?
 
