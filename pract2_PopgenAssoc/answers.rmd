@@ -6,60 +6,43 @@
 > (1) What are these files, what does each of them contain?
 
 chr16_maf.log - A Plink log file describing what was done
+
 chr16_maf.frq - A results file containing the Minor Allele Frquencies, one line per SNP.
 
 
-> (2) What is the minor allele and the minor allele frequency for rs3751812? (hint: A1 is the minor allele)
+> (2) What is the minor allele and the minor allele frequency for rs758033? (hint: A1 is the minor allele)
 
-
+T 0.25
 
 #Exercise 2 - Hardy Weinberg Equilbrium
-The plink command for estimating Hardy Weinberg Statistics is `--hardy`. Run a plink job for this.
 
+> (3) Is the SNP rs758033 In HWE?
 
-**_Question:_**
-> (3) Is the SNP rs3751812 In HWE?
+The p-value for the test in 0.03256. This is below 0.05, but given the number of tests this is not sginificant.
 
-There are many other summary statistics that Plink can estimate. If you have time have a look at the Plink webpage <http://pngu.mgh.harvard.edu/~purcell/plink/summary.shtml> and try some others out.
+The null hypothesis is no difference between observed and expected (under HWE). We cannot reject the null hypothesis, so there is no evidence that rs758033 is not in HWE.
 
 #Exercise 3 - Association testing with Plink
-Here we will just do a single SNP association with BMI. 
 
-This will be a simple linear regression with BMI as the outcome (dependent variable), rs3751812 as the SNP exposure of interest (independent variable) and sex and age as covariates.  
-
-Because our dataset contains thousands of SNPs we will use `--snp` to define the single SNP of interest. 
-
-First use `grep` to have a look at the SNP of interest in the `.bim`, `.freq` and `.hwe` files.
-
-<br />
-**_Question:_**
 > (4) What are the two alleles at this SNP? What is the minor allele frequency? Is this SNP in HWE?
 
-Until now we have not used any phenotype data. The phenotype data is stored in `phen.txt` and the covariates in `covs.txt`
+T/G MAF(T)=0.39 HWE(P)=0.71 - The SNP is in HWE.
 
-<br />
-**_Question:_**
 > (5) Have a look at these files and write down the column names for BMI, sex and age (case-sensitive). You will need to know these for the next command.
 
-Use the following command to run the association. Some parts have been left blank for you to fill in. 
+phen.txt: BMI
 
-Instead of typing into the command line you will find this script here: 
+covs.txt: sex, age
 
-`~/pract2_PopgenAssoc/scripts/assoc.sh` 
 
-Edit using `pico` and save, before running by typing `./assoc.sh`
-
-`plink --bfile ~/pract2_PopgenAssoc/data/chr16 --snp rs3751812 --linear –ci 0.95 --pheno ~/pract2_PopgenAssoc/data/phen.txt --pheno-name ________ --covar ~/pract2_PopgenAssoc/data/covs.txt --covar-name _________ --out ~/pract2_PopgenAssoc/output/rs3751812_BMI`
-
-<br />
-**_Questions:_**
 > (6) What are the results?
 
->   BETA
+BETA = 0.6503
 
->   95% CI
+95% CI = 0.4753 - 0.8253
 
->   PVALUE
+PVALUE = 3.5x10-13
 
 > (7) Write a sentence that fully describes this result (think about which allele is the BMI increasing allele).
 
+rs3751812 is associated with BMI (p=3.5x10-13), with a 0.65kg/m2 increase in BMI per T allele.
