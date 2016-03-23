@@ -1,80 +1,96 @@
 # Practical: Bioinformatic follow-up of GWAS hits
 # Objectives
 Do some bioinformatic follow-up investigation of GWAS hits using a range of online tools
+
 1. Generate a locuszoom plot to visualise the association signal
-2. Use the ensembl genome browser to explore the region
 3. Identify interesting annotations using Haploreg
+4. 2. Use the ensembl genome browser to explore the region and visualise annotations
 
 #Data
-This practical follows up on results generated in the GWAS session.
+This practical uses results generated in the GWAS session - see data saved in exercise 3
+
 Regional association results files have already been generated and saved here: `GenEpi_shortcourse_2016\Day2_Section6_GWAS`
+
 We will access external resources through websites
 
 
-#Exercise 1 - Unclean GWAS
-First, we will run a GWAS without doing any cleaning to the dataset.
+#Exercise 1 - Generate locuszoom plots
+Choose a signal to investigate: rs571312; rs630372; rs8050136; rs13130484; rs2867125
 
-Take a look at the data `data/geno_unclean.bim` & `.fam`
+Go to [locuszoom website](http://locuszoom.sph.umich.edu/locuszoom/genform.php?type=yourdata)
 
-**_Questions:_**
-> (1) How many individuals are there?
-> (2) How many SNPs are there?
+Upload the regional association results (for the relevant chromosome) already prepared for you, e.g. `chr18_assoc.txt`
 
-Run the GWAS (without QC) `./unclean_gwas.sh` – results are in the `output/` directory
+`The p-value column is 'P'`
 
-Run the script to generate the plots using R `./unclean_gwas_graphs.sh`
+`The marker column is 'SNP'`
 
-Open WINSCP (in windows) and open the graphs you’ve just created.
+`The delimiter is 'whitespace'`
 
-**_Question:_**
-> (3) How can we tell there is a problem with this GWAS?
+`Enter your SNP name into the box.`
 
-#Exercise 2 - Cleaning the GWAS data
-There are many steps to a good QC procedure (see Weale 2010. Quality control for genome-wide association studies. Methods in Molecular Biology 628:341-372). Here we assume that related individuals and non-white Europeans have already been removed and proceed with the final steps of the QC.
 
-**_Question:_**
-> (4) For each of the parameters below, which SNPs or individuals do you think should be removed?
-
->     Minor allele frequency?
-
->     Hardy Weinberg p-value?
-
->     SNP missingness?
-
->     Individual missingness?
-
-Now look at the `qc.sh` script to see the suggested exclusions for this dataset. Run the `qc.sh` script to generate new ‘cleaned’ data files `geno_qc.bed` `.bim` `.fam`
-
-Open WINSCP (in windows) and open the graphs you’ve just created.
-
-#Exercise 3 - Running the clean GWAS
-We will now run the final ‘clean’ GWAS for BMI.
-
-To do this, copy the `unclean_gwas.sh` to a new script using `cp unclean_gwas.sh {newfilename}`
-
-Edit the file to use the new ‘clean’ GWAS data, remove the covar-name option so it includes all principle component covariates in the model and output to a new file named `bmi_clean`
-
-Run the script. 
-
-You’ll notice at this point that the script is going to take a long time to run! So once you get bored waiting, hit `ctrl-c` to cancel and go to the `results/` directory where you can see the pre-made results file.
-
-Copy the `unclean_gwas_graphs.sh` file to a new file named `clean_gwas_graphs.sh`. Edit to use the new clean results and output to new files. Run this new script with `./unclean_gwas_graphs.sh`
-
-Open WINSCP (in windows) and open the graphs you’ve just created.
-
-Look at the results file using the following commands:
-
-`head bmi_clean.assoc.linear.add`
-
-`awk '$9<0.00000005' bmi_clean.assoc.linear.add | wc -l`
-
-`grep -v NA bmi_clean.assoc.linear.add | sort -g -k 9 | head`
+Now, create your plot!
 
 **_Questions:_**
-> (4) How many genome-wide significant (p<5x10-8) signals do you have?
+> (1) How many SNPs are significant in this region?
 
-> (5) What is the top signal?
+> (2) Are they all in high LD?
 
-> (6) How might we go about confirming this finding?
+> (3) Over what region does the association span? (in bp)
+
+> (4) What genes are nearby?
+
+
+#Exercise 2 - Investigating your signal in Haploreg
+We will now test if our signal overlaps with any interesting annotations:
+- Previous associations
+- eQTL results
+- functional annotations in ENCODE/RoadMap Epigenomics
+
+Open the [Haploreg website](http://www.broadinstitute.org/mammals/haploreg/haploreg.php)
+
+There are different ways to select your 'credible SNP set'. Here we will just look up everything with r<sup>2</sup>>0.8 with top SNP.
+
+`Enter your SNP name into the box and click submit`
+
+**_Question:_**
+> (5) What other traits have been associated in this region? (look at NHGRI/EBI GWAS hits column + click on SNPs to see trait)
+
+> (6) Are any SNPs known eQTLs? For what gene? In what tissue?
+
+> (7) How many have histone marks indicative of a promoter? an enhancer? In a region of open chromatin? Have proteins bound?
+
+> (8) Which SNP alters the most motifs? Which motif is most affected?
+
+
+#Exercise 3 - Exploring the region in ensembl
+Now we will explore the same region in ensembl
+Go to the [Ensembl website](http://grch37.ensembl.org/Homo_sapiens/Info/Index)
+
+`Enter your SNP name`
+
+`Click on some of the 'Explore this variant' boxes to see what sort of information you can get`
+
+`Click on the Location tab to visualise the region`
+
+`Zoom to view around 50kb`
+
+`Note the 1KG - All SNPs/INDELs track - use the key to work out the variant types`
+
+`Note the Multi Cell Regulatory Features column - click on some marks`
+
+`Click on 'Configure this page' & Enable all regulatory features`
+
+**_Questions:_**
+
+Pick either the top SNP or one that has stood out for you
+> (9) According to ensembl what type of variant is this?
+
+Find the nearest regulatory region
+
+> (10) What is the regulatory annotation? 
+
+> (11) What cell types is this annotation in?
 
 
