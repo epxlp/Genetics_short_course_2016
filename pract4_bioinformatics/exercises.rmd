@@ -1,1 +1,80 @@
+# Practical: Bioinformatic follow-up of GWAS hits
+# Objectives
+Do some bioinformatic follow-up investigation of GWAS hits using a range of online tools
+1. Generate a locuszoom plot to visualise the association signal
+2. Use the ensembl genome browser to explore the region
+3. Identify interesting annotations using Haploreg
+
+#Data
+This practical follows up on results generated in the GWAS session.
+Regional association results files have already been generated and saved here: `GenEpi_shortcourse_2016\Day2_Section6_GWAS`
+We will access external resources through websites
+
+
+#Exercise 1 - Unclean GWAS
+First, we will run a GWAS without doing any cleaning to the dataset.
+
+Take a look at the data `data/geno_unclean.bim` & `.fam`
+
+**_Questions:_**
+> (1) How many individuals are there?
+> (2) How many SNPs are there?
+
+Run the GWAS (without QC) `./unclean_gwas.sh` – results are in the `output/` directory
+
+Run the script to generate the plots using R `./unclean_gwas_graphs.sh`
+
+Open WINSCP (in windows) and open the graphs you’ve just created.
+
+**_Question:_**
+> (3) How can we tell there is a problem with this GWAS?
+
+#Exercise 2 - Cleaning the GWAS data
+There are many steps to a good QC procedure (see Weale 2010. Quality control for genome-wide association studies. Methods in Molecular Biology 628:341-372). Here we assume that related individuals and non-white Europeans have already been removed and proceed with the final steps of the QC.
+
+**_Question:_**
+> (4) For each of the parameters below, which SNPs or individuals do you think should be removed?
+
+>     Minor allele frequency?
+
+>     Hardy Weinberg p-value?
+
+>     SNP missingness?
+
+>     Individual missingness?
+
+Now look at the `qc.sh` script to see the suggested exclusions for this dataset. Run the `qc.sh` script to generate new ‘cleaned’ data files `geno_qc.bed` `.bim` `.fam`
+
+Open WINSCP (in windows) and open the graphs you’ve just created.
+
+#Exercise 3 - Running the clean GWAS
+We will now run the final ‘clean’ GWAS for BMI.
+
+To do this, copy the `unclean_gwas.sh` to a new script using `cp unclean_gwas.sh {newfilename}`
+
+Edit the file to use the new ‘clean’ GWAS data, remove the covar-name option so it includes all principle component covariates in the model and output to a new file named `bmi_clean`
+
+Run the script. 
+
+You’ll notice at this point that the script is going to take a long time to run! So once you get bored waiting, hit `ctrl-c` to cancel and go to the `results/` directory where you can see the pre-made results file.
+
+Copy the `unclean_gwas_graphs.sh` file to a new file named `clean_gwas_graphs.sh`. Edit to use the new clean results and output to new files. Run this new script with `./unclean_gwas_graphs.sh`
+
+Open WINSCP (in windows) and open the graphs you’ve just created.
+
+Look at the results file using the following commands:
+
+`head bmi_clean.assoc.linear.add`
+
+`awk '$9<0.00000005' bmi_clean.assoc.linear.add | wc -l`
+
+`grep -v NA bmi_clean.assoc.linear.add | sort -g -k 9 | head`
+
+**_Questions:_**
+> (4) How many genome-wide significant (p<5x10-8) signals do you have?
+
+> (5) What is the top signal?
+
+> (6) How might we go about confirming this finding?
+
 
