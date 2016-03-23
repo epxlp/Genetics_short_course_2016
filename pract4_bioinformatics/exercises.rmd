@@ -3,8 +3,8 @@
 Do some bioinformatic follow-up investigation of GWAS hits using a range of online tools
 
 1. Generate a locuszoom plot to visualise the association signal
-3. Identify interesting annotations using Haploreg
-4. 2. Use the ensembl genome browser to explore the region and visualise annotations
+2. Identify interesting annotations using Haploreg
+3. Use the ensembl genome browser to explore the region and visualise annotations
 
 #Data
 This practical uses results generated in the GWAS session - see data saved in exercise 3
@@ -33,18 +33,24 @@ Upload the regional association results (for the relevant chromosome) already pr
 Now, create your plot!
 
 **_Questions:_**
-> (1) How many SNPs are significant in this region?
+> (1) Is there much resolution for the signal (many of few SNPs, small or large region)?
 
-> (2) Are they all in high LD?
+> (2) Are they all associated SNPs in high LD?
 
-> (3) Over what region does the association span? (in bp)
+> (3) What genes are nearby?
 
-> (4) What genes are nearby?
+
+#Exercise 2 - GWAS catalog
+See if the association with your SNP (gene or region) is novel or known
+Go to the [EBI GWAS catalog website](https://www.ebi.ac.uk/gwas/)
+
+**_Question:_**
+> (4) Is this association with BMI known or novel?
 
 
 #Exercise 2 - Investigating your signal in Haploreg
 We will now test if our signal overlaps with any interesting annotations:
-- Previous associations
+- coding variant
 - eQTL results
 - functional annotations in ENCODE/RoadMap Epigenomics
 
@@ -54,18 +60,27 @@ There are different ways to select your 'credible SNP set'. Here we will just lo
 
 `Enter your SNP name into the box and click submit`
 
-**_Question:_**
-> (5) What other traits have been associated in this region? (look at NHGRI/EBI GWAS hits column + click on SNPs to see trait)
+**_Questions:_**
+> (5) Are any SNPs coding SNPs? (see last column)
 
-> (6) Are any SNPs known eQTLs? For what gene? In what tissue?
+> (6) Are any SNPs known eQTLs? If so for what gene? In what tissue?
 
-> (7) How many have histone marks indicative of a promoter? an enhancer? In a region of open chromatin? Have proteins bound?
+> (7) Could you say with any confidence which is the causal variant?
 
-> (8) Which SNP alters the most motifs? Which motif is most affected?
+> (8) Could you say with any confidence which is the causal gene?
+
+> (9) Could you say with any confidence which is the tissue of interest?
+
+
+**_Extra Questions:_**
+> (10) How many have histone marks indicative of a promoter? an enhancer? In a region of open chromatin? Have proteins bound?
+
+> (11) Which SNP alters the most motifs? Which motif is most affected?
+
 
 
 #Exercise 3 - Exploring the region in ensembl
-Now we will explore the same region in ensembl
+Now we will explore the same region in ensembl & see visualisation of the same regulatory data.
 Go to the [Ensembl website](http://grch37.ensembl.org/Homo_sapiens/Info/Index)
 
 `Enter your SNP name`
@@ -82,15 +97,6 @@ Go to the [Ensembl website](http://grch37.ensembl.org/Homo_sapiens/Info/Index)
 
 `Click on 'Configure this page' & Enable all regulatory features`
 
-**_Questions:_**
 
-Pick either the top SNP or one that has stood out for you
-> (9) According to ensembl what type of variant is this?
-
-Find the nearest regulatory region
-
-> (10) What is the regulatory annotation? 
-
-> (11) What cell types is this annotation in?
 
 
