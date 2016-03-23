@@ -52,7 +52,7 @@ But until the causal variant and/or gene is identified the relevance of these an
 
 > (10) How many have histone marks indicative of a promoter? an enhancer? In a region of open chromatin? Have proteins bound?
 
-Known are annotated as promoters, 8 are annotated as enhancers, 6 are in regions of open chromatin, 1 has GATA2 protein bound. 
+None are annotated as promoters, 8 are annotated as enhancers, 6 are in regions of open chromatin, 1 has GATA2 protein bound. 
 
 > (11) Which SNP alters the most motifs? Which motif is most affected?
 
