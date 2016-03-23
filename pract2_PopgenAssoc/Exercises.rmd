@@ -41,6 +41,7 @@ Once this has run navigate to the correct directory and see what files have been
 
 **_Questions:_**
 > (1) What are these files, what does each of them contain?
+
 > (2) What is the minor allele and the minor allele frequency for rs758033? (hint: A1 is the minor allele)
 
 #Exercise 2 - Hardy Weinberg Equilbrium
