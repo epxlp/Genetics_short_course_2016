@@ -1,0 +1,47 @@
+# Practical: Introduction to genetic data 
+# ANSWERS
+
+> (1) When is `less –S {file}` a better command to use to have a quick look at a file?
+
+less -S is useful for wide files as it does not wrap each line. 
+Instead it only shows the top left corner of a file. 
+For ped files with thousands of columns, this is a much better command than less (without -S) or head.
+
+
+> (2) What do you think the 4 columns in a .map file are?
+
+Chromosome, SNP rsID, unused (cM), base position
+
+> (3) How many variants are there in this dataset?
+
+7092
+
+> (4) How many individuals are there in this dataset?
+
+8237
+
+> (5) How many columns are there in the .ped file before the genetic data columns? What might these be?
+
+6: Family ID, Individual ID, Mother ID, Father ID, sex, phenotype
+
+> (6) What are the 2 possible alleles for the first SNP in the dataset? What is the name of this SNP?
+
+T/G rs5747968
+
+> (7) Search for SNP rs7288409. What is the bp position for this SNP?
+
+18542311
+
+> (8) What is the difference between a .bim and a .map file?
+
+.bim files have extra columns of the two alleles to allow the data to be stored more efficiently.
+
+> (9) What is the difference between a .fam and a .ped file?
+
+A .fam file contains only the first 6 columns of a .ped file. 
+
+
+> (10) Above, you listed the possible alleles for rs5747968 (hopefully as G & T). If we were to represent the data as dosage of G, what would the dosages be for the first 8 people in the dataset?
+
+0,1,0,0,0,0,1,2
+
