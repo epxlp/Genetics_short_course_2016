@@ -41,14 +41,14 @@ Once this has run navigate to the correct directory and see what files have been
 
 **_Questions:_**
 > (1) What are these files, what does each of them contain?
-> (2) What is the minor allele and the minor allele frequency for rs3751812? (hint: A1 is the minor allele)
+> (2) What is the minor allele and the minor allele frequency for rs758033? (hint: A1 is the minor allele)
 
 #Exercise 2 - Hardy Weinberg Equilbrium
 The plink command for estimating Hardy Weinberg Statistics is `--hardy`. Run a plink job for this.
 
 
 **_Question:_**
-> (3) Is the SNP rs3751812 In HWE?
+> (3) Is the SNP rs758033 In HWE?
 
 There are many other summary statistics that Plink can estimate. If you have time have a look at the Plink webpage <http://pngu.mgh.harvard.edu/~purcell/plink/summary.shtml> and try some others out.
 
