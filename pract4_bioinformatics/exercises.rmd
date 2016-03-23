@@ -111,11 +111,11 @@ For your region:
 
 > Is there any evidence for a particular .....
 
-  > causal variant?
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; causal variant?
 
-  > causal gene?
+>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; causal gene?
 
-  > affected tissue?
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; affected tissue?
 
 > What additional investigations/validation might you want to do?
 
