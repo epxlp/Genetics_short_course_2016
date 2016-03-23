@@ -16,7 +16,7 @@ We will access external resources through websites
 
 
 #Exercise 1 - Generate locuszoom plots
-Choose a signal to investigate: rs571312; rs630372; rs8050136; rs13130484; rs2867125
+Choose a signal to investigate: rs571312; rs630372; rs8050136; rs13130484; rs2867125; rs12748679
 
 Go to [locuszoom website](http://locuszoom.sph.umich.edu/locuszoom/genform.php?type=yourdata)
 
