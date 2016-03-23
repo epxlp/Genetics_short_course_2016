@@ -18,7 +18,7 @@ We will access external resources through websites
 #Exercise 1 - Generate locuszoom plots
 Choose a signal to investigate: rs571312; rs630372; rs8050136; rs13130484; rs2867125; rs12748679
 
-Go to [locuszoom website](http://locuszoom.sph.umich.edu/locuszoom/genform.php?type=yourdata)
+Go to locuszoom website (http://locuszoom.sph.umich.edu) and click 'Plot Using Your data'
 
 Upload the regional association results (for the relevant chromosome) already prepared for you, e.g. `chr18_assoc.txt`
 
@@ -44,7 +44,7 @@ Now, create your plot!
 #Exercise 2 - GWAS catalog
 See if the association with your SNP (gene or region) is novel or known
 
-Go to the [EBI GWAS catalog website](https://www.ebi.ac.uk/gwas/)
+Go to the EBI GWAS catalog website: https://www.ebi.ac.uk/gwas/
 
 **_Question:_**
 > (4) Is this association with BMI known or novel?
@@ -57,7 +57,7 @@ We will now test if our signal overlaps with any interesting annotations:
 - eQTL results
 - functional annotations in ENCODE/RoadMap Epigenomics
 
-Open the [Haploreg website](http://www.broadinstitute.org/mammals/haploreg/haploreg.php)
+Open the Haploreg website: http://www.broadinstitute.org/mammals/haploreg
 
 There are different ways to select your 'credible SNP set'. Here we will just look up everything with r<sup>2</sup>>0.8 with top SNP.
 
@@ -85,7 +85,7 @@ There are different ways to select your 'credible SNP set'. Here we will just lo
 #Exercise 3 - Exploring the region in ensembl
 Now we will explore the same region in ensembl & see visualisation of the same regulatory data.
 
-Go to the [Ensembl website](http://grch37.ensembl.org/Homo_sapiens/Info/Index)
+Go to the Ensembl website: http://grch37.ensembl.org/Homo_sapiens/Info/Index
 
 `Enter your SNP name`
 
