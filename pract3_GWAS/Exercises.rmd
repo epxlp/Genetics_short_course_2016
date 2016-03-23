@@ -81,7 +81,7 @@ Look at the results file using the following commands:
 
 `awk '$9<0.00000005' bmi_clean.assoc.linear.add | wc -l`
 
-`awk '{if(NR==1 || $9<0.00000005) print $0}' bmi_clean.assoc.linear.add`
+`awk '{if(NR==1 || $9<0.00000005) print $0}' bmi_clean.assoc.linear.add` - save the output of this command for the next practical
 
 `grep -v NA bmi_clean.assoc.linear.add | sort -g -k 9 | head`
 
