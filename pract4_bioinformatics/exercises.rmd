@@ -109,14 +109,14 @@ For your region:
 
 > What are the nearby genes?
 
-> Is there any evidence for a particular causal...
+> Is there any evidence for a particular .....
 
-> variant?
+  > causal variant?
 
-> gene?
+  > causal gene?
 
-> or affected tissue?
+  > affected tissue?
 
-
+> What additional investigations/validation might you want to do?
 
 
