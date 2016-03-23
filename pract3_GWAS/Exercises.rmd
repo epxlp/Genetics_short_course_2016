@@ -22,7 +22,7 @@ If you get really stuck, example scripts and ready-made output are available in 
 
 #Loading Plink
 If you are starting a new PuTTY session you may need reload plink.
-`Module load apps/plink2`
+`module load apps/plink2`
 
 #Exercise 1 - Unclean GWAS
 First, we will run a GWAS without doing any cleaning to the dataset.
@@ -31,6 +31,7 @@ Take a look at the data `data/geno_unclean.bim` & `.fam`
 
 **_Questions:_**
 > (1) How many individuals are there?
+
 > (2) How many SNPs are there?
 
 Run the GWAS (without QC) `./unclean_gwas.sh` – results are in the `output/` directory
