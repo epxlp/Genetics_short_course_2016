@@ -5,6 +5,13 @@
 3. Produce Manhattan & QQ plots
 4. Interpret GWAS results
 
+This practical uses simulated data. But the scenario is as follows:
+
+Data has been collected as part of a local population cohort, Bristol Obesity Population Study (BOPS), which recruited men and women aged between 33 and 52. Questionnaires were completed and several measures (including BMI) were taken from participants. Blood was taken and DNA extracted for genotyping using the custom 'NiftyBOPs' array.
+
+(Some names may have been invented)
+
+
 #Log In
 Log into bluecrystal using PuTTY.
 
@@ -22,7 +29,7 @@ If you get really stuck, example scripts and ready-made output are available in 
 
 #Loading Plink
 If you are starting a new PuTTY session you may need reload plink.
-`module load apps/plink2`
+`Module load apps/plink2`
 
 #Exercise 1 - Unclean GWAS
 First, we will run a GWAS without doing any cleaning to the dataset.
@@ -87,11 +94,13 @@ Look at the results file using the following commands:
 `grep -v NA bmi_clean.assoc.linear.add | sort -g -k 9 | head`
 
 **_Questions:_**
-> (5) How many genome-wide significant (p<5x10-8) signals do you have?
+> (5) How many individuals in the final analysis?
 
-> (6) Are these likely to all be independent?
+> (6) How many genome-wide significant (p<5x10-8) signals do you have?
 
-> (7) What is the top signal?
+> (7) Are these likely to all be independent?
 
-> (8) How might we go about confirming this finding?
+> (8) What is the top signal?
+
+> (9) How might we go about confirming this finding?
 
