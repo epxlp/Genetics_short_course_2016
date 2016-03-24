@@ -29,7 +29,7 @@ If you get really stuck, example scripts and ready-made output are available in 
 
 #Loading Plink
 If you are starting a new PuTTY session you may need reload plink.
-`Module load apps/plink2`
+`module load apps/plink2`
 
 #Exercise 1 - Unclean GWAS
 First, we will run a GWAS without doing any cleaning to the dataset.
