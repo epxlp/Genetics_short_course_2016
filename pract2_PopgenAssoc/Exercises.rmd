@@ -8,7 +8,7 @@ Log into bluecrystal using PuTTY.
 
 Run the following command to access a compute node:
 
-`qsub -I -q teaching -l nodes=1:ppn=1, walltime=02:00:00`
+`qsub -I -q teaching -l nodes=1:ppn=1,walltime=02:00:00`
 
 #Data
 Data for this practical is available in `pract2_PopgenAssoc/data`
@@ -80,7 +80,7 @@ Instead of typing into the command line you will find this script here:
 
 Edit using `pico` and save, before running by typing `./assoc.sh`
 
-`plink --bfile ~/pract2_PopgenAssoc/data/chr16 --snp rs3751812 --linear –ci 0.95 --pheno ~/pract2_PopgenAssoc/data/phen.txt --pheno-name ________ --covar ~/pract2_PopgenAssoc/data/covs.txt --covar-name _________ --out ~/pract2_PopgenAssoc/output/rs3751812_BMI`
+`plink --bfile ~/pract2_PopgenAssoc/data/chr16 --snp rs3751812 --linear –-ci 0.95 --pheno ~/pract2_PopgenAssoc/data/phen.txt --pheno-name ________ --covar ~/pract2_PopgenAssoc/data/covs.txt --covar-name _________ --out ~/pract2_PopgenAssoc/output/rs3751812_BMI`
 
 <br />
 **_Questions:_**
