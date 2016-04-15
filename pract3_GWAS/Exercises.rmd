@@ -66,7 +66,6 @@ There are many steps to a good QC procedure (see Weale 2010. Quality control for
 
 Now look at the `qc.sh` script to see the suggested exclusions for this dataset. Run the `qc.sh` script to generate new ‘cleaned’ data files `geno_qc.bed` `.bim` `.fam`
 
-Open WINSCP (in windows) and open the graphs you’ve just created.
 
 #Exercise 3 - Running the clean GWAS
 We will now run the final ‘clean’ GWAS for BMI.
@@ -79,7 +78,9 @@ Run the script.
 
 You’ll notice at this point that the script is going to take a long time to run! So once you get bored waiting, hit `ctrl-c` to cancel and go to the `results/` directory where you can see the pre-made results file.
 
-Copy the `unclean_gwas_graphs.sh` file to a new file named `clean_gwas_graphs.sh`. Edit to use the new clean results and output to new files. Run this new script with `./unclean_gwas_graphs.sh`
+Go make to `./scripts`
+
+Copy the `unclean_gwas_graphs.sh` file to a new file named `clean_gwas_graphs.sh`. Edit to use the new clean results and output to new files. Run this new script with `./clean_gwas_graphs.sh`
 
 Open WINSCP (in windows) and open the graphs you’ve just created.
 
