@@ -78,7 +78,7 @@ Run the script.
 
 You’ll notice at this point that the script is going to take a long time to run! So once you get bored waiting, hit `ctrl-c` to cancel and go to the `results/` directory where you can see the pre-made results file.
 
-Go make to `./scripts`
+Go back to `./scripts`
 
 Copy the `unclean_gwas_graphs.sh` file to a new file named `clean_gwas_graphs.sh`. Edit to use the new clean results and output to new files. Run this new script with `./clean_gwas_graphs.sh`
 
