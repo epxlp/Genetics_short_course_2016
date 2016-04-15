@@ -16,7 +16,7 @@ Data has been collected as part of a local population cohort, Bristol Obesity Po
 Log into bluecrystal using PuTTY.
 
 Run the following command to access a compute node:
-`qsub -I -q teaching -l nodes=1:ppn=1, walltime=02:00:00`
+`qsub -I -q teaching -l nodes=1:ppn=1,walltime=02:00:00`
 
 #Data
 Data for this practical is available in `pract3_GWAS/data`
