@@ -51,7 +51,7 @@ The plink command for estimating Hardy Weinberg Statistics is `--hardy`. Run a p
 **_Question:_**
 > (3) Is the SNP rs758033 In HWE?
 
-There are many other summary statistics that Plink can estimate. If you have time have a look at the Plink webpage <http://pngu.mgh.harvard.edu/~purcell/plink/summary.shtml> and try some others out.
+There are many other summary statistics that Plink can estimate. If you have time have a look at the Plink webpage http://pngu.mgh.harvard.edu/~purcell/plink/summary.shtml and try some others out.
 
 #Exercise 3 - Association testing with Plink
 Here we will just do a single SNP association with BMI. 
