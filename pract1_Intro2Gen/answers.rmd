@@ -53,7 +53,15 @@ id3 id3 0 0 2 -9 T T C A ......
 
 > (6) What are the 2 possible alleles for the first SNP in the dataset? What is the name of this SNP?
 
-`[user@newblue2 data]$ less -S chr22.ped`
+```
+[user@newblue2 data]$ less -S chr22.ped
+id1 id1 0 0 2 -9 T T.....
+id2 id2 0 0 2 -9 G T.....
+....
+[user@newblue2 data]$ head chr22.map
+22      rs5747968       0       17067504
+....
+```
 
 T/G rs5747968
 
