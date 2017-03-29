@@ -94,8 +94,25 @@ phen.txt: BMI
 
 covs.txt: sex, age
 
+Run the analysis:
+```
+plink --bfile ~/pract2_PopgenAssoc/data/chr16 --snp rs3751812 --linear –-ci 0.95 --pheno ~/pract2_PopgenAssoc/data/phen.txt --pheno-name BMI --covar ~/pract2_PopgenAssoc/data/covs.txt --covar-name sex,age --out ~/pract2_PopgenAssoc/output/rs3751812_BMI
+```
+
+```
+./assoc.sh
+```
+
 
 > (6) What are the results?
+
+```
+less ~/pract2_PopgenAssoc/output/rs3751812_BMI.assoc.linear
+CHR         SNP         BP   A1       TEST    NMISS       BETA       SE      L95      U95         STAT            P
+  16   rs3751812   53818460    T        ADD     8237     0.6503  0.08928   0.4753   0.8253        7.284    3.545e-13
+  16   rs3751812   53818460    T        age     8237  -0.007949  0.02049 -0.04812  0.03222      -0.3879       0.6981
+  16   rs3751812   53818460    T        sex     8237      1.377   0.1232    1.136    1.618        11.18    8.122e-29
+```
 
 BETA = 0.6503
 
