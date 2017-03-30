@@ -1,4 +1,4 @@
-# Practical: Population Genetics & Association
+# Practical 2: Population Genetics & Association
 # Objectives
 1. Calculate some simple population genetic parameters
 2. Carry out a single SNP association
