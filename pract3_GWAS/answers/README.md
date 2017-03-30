@@ -31,6 +31,7 @@ There are some suspiciously good hits on the Manhattan plot.
 
 > (4) For each of the parameters below, which SNPs or individuals do you think should be removed?
 
+```
 Minor allele frequency <0.01
 
 Hardy Weinberg p-value <1x10-6
@@ -38,8 +39,30 @@ Hardy Weinberg p-value <1x10-6
 SNP missingness >0.05
 
 Individual missingness >0.05
+```
 
-Run the qc.sh script using `./qc.sh` or `~/pract3_GWAS/scripts/qc.sh`
+Run the QC script using `./qc.sh` or `~/pract3_GWAS/scripts/qc.sh`
+Copy the GWAS cript using `cp unclean_gwas.sh clean_gwas.sh`
+Edit this file using nano so it reads:
+```
+#!/bin/bash
+
+module load apps/plink2
+
+plink \
+        --bfile ../output/geno_qc \
+        --linear \
+        --pheno ../data/phen.txt \
+        --pheno-name BMI \
+        --covar ../data/covs.txt \
+        --out ../output/bmi_clean
+
+
+awk 'NR==1 || /ADD/' ../results/bmi_clean.assoc.linear > ../output/bmi_clean.assoc.linear.add
+```
+
+Run the script using `./clean_gwas.sh` or `~/pract3_GWAS/scripts/clean_gwas.sh`
+
 
 
 > (5) How many genome-wide significant (p<5x10-8) signals do you have?
