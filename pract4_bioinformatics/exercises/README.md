@@ -1,23 +1,21 @@
 # Practical: Bioinformatic follow-up of GWAS hits
-# Objectives
-Do some bioinformatic follow-up investigation of GWAS hits using a range of online tools
+# Objective
+Do some bioinformatic follow-up investigation of a GWAS hits using a range of online tools
 
 1. Generate a locuszoom plot to visualise the association signal
 2. See if the association is known or novel 
 3. Identify interesting annotations using Haploreg
 4. Use the ensembl genome browser to explore the region and visualise annotations
 
-#Data
-This practical uses results generated in the GWAS session - see data saved in exercise 3
+# Data
+This practical uses results generated in the GWAS session. We will focus on the Chr 16 locus.
 
-Regional association results files have already been generated and saved here: `GenEpi_shortcourse_2016\Day2_Section6_GWAS`
+Regional association results files have already been extracted and saved here: `E:/Genetic Epidemiology/GWAS/practical/.....`
 
 We will access external resources through websites
 
 
-#Exercise 1 - Generate locuszoom plots
-Choose a signal to investigate: rs571312; rs630372; rs8050136; rs13130484; rs2867125; rs12748679
-
+# Exercise 1 - Generate locuszoom plots
 Go to locuszoom website (http://locuszoom.sph.umich.edu) and click 'Plot Using Your data'
 
 Upload the regional association results (for the relevant chromosome) already prepared for you, e.g. `chr18_assoc.txt`
@@ -41,7 +39,7 @@ Now, create your plot!
 > (3) What genes are nearby?
 
 
-#Exercise 2 - GWAS catalog
+# Exercise 2 - GWAS catalog
 See if the association with your SNP (gene or region) is novel or known
 
 Go to the EBI GWAS catalog website: https://www.ebi.ac.uk/gwas/
@@ -50,7 +48,7 @@ Go to the EBI GWAS catalog website: https://www.ebi.ac.uk/gwas/
 > (4) Is this association with BMI known or novel?
 
 
-#Exercise 3 - Investigating your signal in Haploreg
+# Exercise 3 - Investigating your signal in Haploreg
 We will now test if our signal overlaps with any interesting annotations:
 
 - coding variant
@@ -82,7 +80,7 @@ There are different ways to select your 'credible SNP set'. Here we will just lo
 
 
 
-#Exercise 4 - Exploring the region in ensembl
+# Exercise 4 - Exploring the region in ensembl
 Now we will explore the same region in ensembl & see visualisation of the same regulatory data.
 
 Go to the Ensembl website: http://grch37.ensembl.org/Homo_sapiens/Info/Index
@@ -102,7 +100,7 @@ Go to the Ensembl website: http://grch37.ensembl.org/Homo_sapiens/Info/Index
 `Click on 'Configure this page' & Enable all regulatory features`
 
 
-#Summary
+# Summary
 For your region:
 
 > Is the association novel?
