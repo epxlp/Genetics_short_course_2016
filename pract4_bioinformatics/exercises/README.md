@@ -55,7 +55,7 @@ Open the Haploreg website: http://www.broadinstitute.org/mammals/haploreg
 
 There are different ways to select your 'credible SNP set'. Here we will just look up everything with r<sup>2</sup>>0.8 with top SNP.
 
-`Enter your SNP name into the box and click submit`
+`Enter the SNP name into the box and click submit`
 
 **_Questions:_**
 > (5) Are any SNPs coding SNPs? (see last column)
@@ -76,8 +76,8 @@ There are different ways to select your 'credible SNP set'. Here we will just lo
 
 Go to http://www.yuelab.org
 
-Navigate to 3D genome browser, click on the Hi-C tab.
-Select IMR90 as the tissue type and search by RSID: `rs8050136`. 
+Navigate to 3D genome browser, click on the Hi-C tab.<br>
+Select IMR90 as the tissue type and search by RSID: `rs8050136`. <br>
 Zoom out once and examine the region that is observed to have chromatin interaction with the region containing the SNP. This was how the Claussnitzer paper selected which genes to follow-up in an eQTL experiment.
 
 # Exercise 5 - Mouse knockouts
