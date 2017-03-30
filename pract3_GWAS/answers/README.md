@@ -39,6 +39,8 @@ SNP missingness >0.05
 
 Individual missingness >0.05
 
+Run the qc.sh script using `./qc.sh` or `~/pract3_GWAS/scripts/qc.sh`
+
 
 > (5) How many genome-wide significant (p<5x10-8) signals do you have?
 
