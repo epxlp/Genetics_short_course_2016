@@ -130,3 +130,6 @@ rs571312. On chromosome 18 at position 57839769.
 In GWAS we normally seek replication in an independent study. <br>
 Because we only test a few SNPs in replication, a significant result is achieved with a higher p-value.
 We can also use other data resources to check the plausibility of the signals (see next session)
+
+
+Extra task hint: You will need to run additional plink commands in order to have all the necessary information to calculate Rsquared.
