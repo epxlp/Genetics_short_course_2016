@@ -74,6 +74,8 @@ There are different ways to select your 'credible SNP set'. Here we will just lo
 <br>
 <br>
 <br>
+<br>
+<br>
 
 # Exercise 4 - Chromatin interaction
 
