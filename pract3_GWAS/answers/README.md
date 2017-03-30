@@ -84,6 +84,8 @@ Run this scripts using `./clean_gwas_graphs.sh`
 
 ![alt text](https://github.com/epxlp/Genetics_short_course_2016/blob/master/pract3_GWAS/answers/bmi_clean_qqplot.png)
 ![alt text](https://github.com/epxlp/Genetics_short_course_2016/blob/master/pract3_GWAS/answers/bmi_clean_manhattan.png)
+<br>
+<br>
 
 > (5) How many genome-wide significant (p<5x10-8) signals do you have?
 
