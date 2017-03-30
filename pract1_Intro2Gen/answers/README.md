@@ -1,4 +1,4 @@
-# Practical: Introduction to genetic data 
+# Practical 1: Introduction to genetic data 
 # ANSWERS
 
 > (1) When is `less –S {file}` a better command to use to have a quick look at a file?
