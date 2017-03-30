@@ -7,7 +7,7 @@
 
 This practical uses simulated data. But the scenario is as follows:
 
-Data has been collected as part of a local population cohort, Bristol Obesity Population Study (BOPS), which recruited secondary school children (aged between 11 and 18) from around Bristol. Questionnaires were completed and several measures (including BMI) were taken by a nurse during a school health checkup. Blood was taken and DNA extracted for genotyping using the custom 'NiftyBOPs' array. Individuals of non-European ancestry were excluded and principal components were calcuated to estimate any remaining population structure. Individuals were followed up to see if they suffered from certain medical conditions (including hypertension), later in life.
+Data has been collected as part of a local population cohort, Bristol Obesity Population Study (BOPS), which recruited secondary school children (aged between 11 and 18) from around Bristol. Questionnaires were completed and several measures (including BMI) were taken by a nurse during a school health checkup. Blood was taken and DNA extracted for genotyping using the custom 'NiftyBOPs' array. Individuals of non-European ancestry were excluded and principal components were calcuated to estimate any remaining population structure.
 
 (Some names may have been invented)
 
