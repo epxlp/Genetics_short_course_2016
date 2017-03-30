@@ -75,7 +75,7 @@ We will now run the final ‘clean’ GWAS for BMI. This requires you to edit so
 
 To do this, copy the `unclean_gwas.sh` to a new script using `cp unclean_gwas.sh {newfilename}`
 
-Edit the file to use the new ‘clean’ GWAS data, remove the covar-name option so it includes all principle component covariates in the model and output to a new file named `bmi_clean`
+Edit the file (using pico) to use the new ‘clean’ GWAS data, remove the covar-name option so it includes all principle component covariates in the model and output to a new file named `bmi_clean`
 
 Run the script ---- This should now be running the clean GWAS
 
@@ -85,7 +85,7 @@ Now we will make some plots......
 
 Go back to `./scripts`
 
-Copy the `unclean_gwas_graphs.sh` file to a new file named `clean_gwas_graphs.sh`. Edit to use the new clean results and output to new files. Run this new script with `./clean_gwas_graphs.sh`
+Copy the `unclean_gwas_graphs.sh` file to a new file named `clean_gwas_graphs.sh`. Edit (using pico) to use the new clean results and output to new files. Run this new script with `./clean_gwas_graphs.sh`
 
 Open WINSCP (in windows) and open the graphs you’ve just created.
 
