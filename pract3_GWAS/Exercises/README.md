@@ -110,3 +110,7 @@ Look at the results file using the following commands:
 
 > (9) How might we go about confirming this finding?
 
+
+**_Task_**
+
+Complete the results sheet on the next page. Include the top SNP at each locus. You will use this sheet in the 'writing a GWAS abstract' session.
