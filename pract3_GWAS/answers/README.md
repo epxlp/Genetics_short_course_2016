@@ -3,9 +3,19 @@
 
 > (1) How many individuals are there?
 
+```
+[user@newblue4 data]$ wc -l geno_unclean.fam
+8237 geno_unclean.fam
+```
+
 8237 individuals
 
 > (2) How many SNPs are there?
+
+```
+[user@newblue4 data]$ wc -l geno_unclean.bim
+463080 geno_unclean.bim
+```
 
 463,080 SNPs
 
