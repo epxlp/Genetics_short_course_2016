@@ -42,7 +42,7 @@ Individual missingness >0.05
 ```
 
 Run the QC script using `./qc.sh` or `~/pract3_GWAS/scripts/qc.sh`
-Copy the GWAS cript using `cp unclean_gwas.sh clean_gwas.sh`
+Copy the GWAS script using `cp unclean_gwas.sh clean_gwas.sh`
 Edit this file using nano so it reads:
 ```
 #!/bin/bash
@@ -62,6 +62,9 @@ awk 'NR==1 || /ADD/' ../results/bmi_clean.assoc.linear > ../output/bmi_clean.ass
 ```
 
 Run the script using `./clean_gwas.sh` or `~/pract3_GWAS/scripts/clean_gwas.sh`
+View the results file using `head bmi_clean.assoc.linear.add`
+
+Copy the graphs script using `cp unclean_gwas_graphs.sh clean_graphs.sh`
 
 
 
