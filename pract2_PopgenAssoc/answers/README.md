@@ -1,4 +1,4 @@
-# Practical: Population Genetics & Association
+# Practical 2: Population Genetics & Association
 # Answers
 
 #Exercise 1 - Estimating minor allele frequencies
