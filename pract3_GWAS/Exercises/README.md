@@ -1,4 +1,4 @@
-# Practical: Genome-wide association study of BMI in Plink
+# Practical 3: Genome-wide association study of BMI in Plink
 # Objectives
 1. Clean a dataset
 2. Conduct a GWAS analysis
