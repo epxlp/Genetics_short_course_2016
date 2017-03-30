@@ -42,7 +42,9 @@ Take a look at the phenotype data `data/phen.txt`
 
 > (2) How many SNPs are there?
 
-Run the GWAS of BMI (without QC) `./unclean_gwas.sh` – results are in the `output/` directory
+We will run the first GWAS using a provided script `~/pract3_GWAS/scripts/unclean_gwas.sh`. You should look at this script to see what it contains, so you understand how to make your own.
+Run the GWAS of BMI (without QC) using `./unclean_gwas.sh` or `~/pract3_GWAS/scripts/unclean_gwas.sh`
+Results will be in the `output/` directory
 
 Run the script to generate the plots using R `./unclean_gwas_graphs.sh`
 
@@ -69,15 +71,17 @@ Now look at the `qc.sh` script to see the suggested exclusions for this dataset.
 
 
 #Exercise 3 - Running the clean GWAS
-We will now run the final ‘clean’ GWAS for BMI.
+We will now run the final ‘clean’ GWAS for BMI. This requires you to edit some scripts.
 
 To do this, copy the `unclean_gwas.sh` to a new script using `cp unclean_gwas.sh {newfilename}`
 
 Edit the file to use the new ‘clean’ GWAS data, remove the covar-name option so it includes all principle component covariates in the model and output to a new file named `bmi_clean`
 
-Run the script. 
+Run the script ---- This should now be running the clean GWAS
 
 You’ll notice at this point that the script is going to take a long time to run! So once you get bored waiting, hit `ctrl-c` to cancel and go to the `results/` directory where you can see the pre-made results file.
+
+Now we will make some plots......
 
 Go back to `./scripts`
 
