@@ -12,13 +12,13 @@ Data has been collected as part of a local population cohort, Bristol Obesity Po
 (Some names may have been invented)
 
 
-#Log In
+# Log In
 Log into bluecrystal using PuTTY.
 
-Run the following command to access a compute node:
+Run the following command to access a compute node:<br>
 `qsub -I -q teaching -l nodes=1:ppn=1,walltime=02:00:00`
 
-#Data
+# Data
 Data for this practical is available in `pract3_GWAS/data`
 
 Scripts (files containing commands) should be saved in `pract3_GWAS/scripts`
@@ -27,14 +27,14 @@ You should save your output to `pract3_GWAS/output`
 
 If you get really stuck, example scripts and ready-made output are available in `pract3_GWAS/results` (no peaking unless you have to!)
 
-#Loading Plink
-If you are starting a new PuTTY session you may need reload plink.
+# Loading Plink
+If you are starting a new PuTTY session you may need reload plink.<br>
 `module load apps/plink2`
 
-#Exercise 1 - Unclean GWAS
+# Exercise 1 - Unclean GWAS
 First, we will run a GWAS of BMI without doing any cleaning to the dataset.
 
-Take a look at the genetic data `data/geno_unclean.bim` & `.fam`
+Take a look at the genetic data `data/geno_unclean.bim` & `.fam`<br>
 Take a look at the phenotype data `data/phen.txt`
 
 **_Questions:_**
@@ -42,8 +42,8 @@ Take a look at the phenotype data `data/phen.txt`
 
 > (2) How many SNPs are there?
 
-We will run the first GWAS using a provided script `~/pract3_GWAS/scripts/unclean_gwas.sh`. You should look at this script to see what it contains, so you understand how to make your own.
-Run the GWAS of BMI (without QC) using `./unclean_gwas.sh` or `~/pract3_GWAS/scripts/unclean_gwas.sh`
+We will run the first GWAS using a provided script `~/pract3_GWAS/scripts/unclean_gwas.sh`. You should look at this script to see what it contains, so you understand how to make your own.<br>
+Run the GWAS of BMI (without QC) using `./unclean_gwas.sh` or `~/pract3_GWAS/scripts/unclean_gwas.sh`<br>
 Results will be in the `output/` directory
 
 Run the script to generate the plots using R `./unclean_gwas_graphs.sh`
@@ -53,7 +53,7 @@ Open WINSCP (in windows) and open the graphs you’ve just created (you might ne
 **_Question:_**
 > (3) How can we tell there is a problem with this GWAS?
 
-#Exercise 2 - Cleaning the GWAS data
+# Exercise 2 - Cleaning the GWAS data
 There are many steps to a good QC procedure (see Weale 2010. Quality control for genome-wide association studies. Methods in Molecular Biology 628:341-372). Here we assume that related individuals and non-white Europeans have already been removed and proceed with the final steps of the QC.
 
 **_Question:_**
@@ -70,7 +70,7 @@ There are many steps to a good QC procedure (see Weale 2010. Quality control for
 Now look at the `qc.sh` script to see the suggested exclusions for this dataset. Run the `qc.sh` script to generate new ‘cleaned’ data files `geno_qc.bed` `.bim` `.fam`
 
 
-#Exercise 3 - Running the clean GWAS
+# Exercise 3 - Running the clean GWAS
 We will now run the final ‘clean’ GWAS for BMI. This requires you to edit some scripts.
 
 To do this, copy the `unclean_gwas.sh` to a new script using `cp unclean_gwas.sh {newfilename}`
@@ -95,7 +95,7 @@ Look at the results file using the following commands:
 
 `awk '$9<0.00000005' bmi_clean.assoc.linear.add | wc -l`
 
-`awk '{if(NR==1 || $9<0.00000005) print $0}' bmi_clean.assoc.linear.add` - save the output of this command for the next practical
+`awk '{if(NR==1 || $9<0.00000005) print $0}' bmi_clean.assoc.linear.add`
 
 `grep -v NA bmi_clean.assoc.linear.add | sort -g -k 9 | head`
 
