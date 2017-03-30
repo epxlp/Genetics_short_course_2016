@@ -1,4 +1,4 @@
-# Practical: Introduction to genetic data 
+# Practical 1: Introduction to genetic data 
 # Objectives
 1.	Get familiar working in a Linux environment
 2.	Learn some simple Linux commands
