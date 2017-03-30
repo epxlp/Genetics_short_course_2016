@@ -79,7 +79,7 @@ Edit the file to use the new ‘clean’ GWAS data, remove the covar-name option
 
 Run the script ---- This should now be running the clean GWAS
 
-You’ll notice at this point that the script is going to take a long time to run! So once you get bored waiting, hit `ctrl-c` to cancel and go to the `results/` directory where you can see the pre-made results file.
+You’ll notice at this point that the script is going to take a long time to run! So once you get bored waiting, hit `ctrl-c` to cancel and go to the `results/` directory where you can see the pre-made results file `bmi_clean.assoc.linear.add`.
 
 Now we will make some plots......
 
