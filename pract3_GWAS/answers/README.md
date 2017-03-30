@@ -1,4 +1,4 @@
-# Practical: Genome-wide association study of BMI in Plink
+# Practical 3: Genome-wide association study of BMI in Plink
 # Answers
 
 > (1) How many individuals are there?
