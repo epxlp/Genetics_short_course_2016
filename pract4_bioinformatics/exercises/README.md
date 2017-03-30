@@ -1,4 +1,4 @@
-# Practical: Bioinformatic follow-up of GWAS hits
+# Practical 4: Bioinformatic follow-up of GWAS hits
 # Objective
 Do some bioinformatic follow-up investigation of a GWAS hits using a range of online tools
 
@@ -18,21 +18,17 @@ We will access external resources through websites
 # Exercise 1 - Generate locuszoom plots
 Go to locuszoom website (http://locuszoom.sph.umich.edu) and click 'Plot Using Your data'
 
-Upload the regional association results (for the relevant chromosome) already prepared for you, e.g. `chr18_assoc.txt`
+Upload the regional association results (for the relevant chromosome) already prepared for you, e.g. `bmi_clean16.assoc.linear.add`
 
-`The p-value column is 'P'`
+select `Plink data` format
 
-`The marker column is 'SNP'`
+Specify SNP `rs8050136`
 
-`The delimiter is 'whitespace'`
-
-`Enter your SNP name into the box.`
-
-
-Now, create your plot!
+Now, create your plot!<br>
+Save this plot to your USB stick as you will need to look at this again during the imputation session.
 
 **_Questions:_**
-> (1) Is there much resolution for the signal (many or few SNPs, small or large region)?
+> (1) Is there much resolution for the signal (many or few SNPs tested/associated, small or large region)?
 
 > (2) Are all associated SNPs in high LD?
 
@@ -68,53 +64,38 @@ There are different ways to select your 'credible SNP set'. Here we will just lo
 
 > (7) Could you say with any confidence which is the causal variant?
 
-> (8) Could you say with any confidence which is the causal gene?
+> (8) Could you say with any confidence what the causal gene is?
 
 > (9) Could you say with any confidence which is the tissue of interest?
 
+> (10) There is some evidence that rs1421085 is the causal variant (Claussnitzer et al, 2015, NEJM). Look in more detail at this SNP. Is there anything that stands out for this SNP?
 
-**_Extra Questions:_**
-> (10) How many have histone marks indicative of a promoter? an enhancer? In a region of open chromatin? Have proteins bound?
+> (11) In the NEJM paper this SNP is described as disrupting ARID5B repressor binding and influencing IRX3 and IRX5 expression. Why is that not seen here? 
 
-> (11) Which SNP alters the most motifs? Which motif is most affected?
+# Exercise 4 - Chromatin interaction
 
+Go to http://www.yuelab.org
 
+Navigate to 3D genome browser, click on the Hi-C tab.
+Select IMR90 as the tissue type and search by RSID: `rs8050136`. 
+Zoom out once and examine the region that is observed to have chromatin interaction with the region containing the SNP. This was how the Claussnitzer paper selected which genes to follow-up in an eQTL experiment.
 
-# Exercise 4 - Exploring the region in ensembl
-Now we will explore the same region in ensembl & see visualisation of the same regulatory data.
+# Exercise 5 - Mouse knockouts
+When you have a gene of interest you can look to see if this gene has been knocked out in mice, and what phenotypes these mice have.
 
-Go to the Ensembl website: http://grch37.ensembl.org/Homo_sapiens/Info/Index
+Go to http://www.informatics.jax.org
 
-`Enter your SNP name`
+Search for `FTO` and `IRX5` mouse knockouts.<br>
+What phenotypes do these mice display?
 
-`Click on some of the 'Explore this variant' boxes to see what sort of information you can get`
-
-`Click on the Location tab to visualise the region`
-
-`Zoom to view around 50kb`
-
-`Note the 1KG - All SNPs/INDELs track - use the key to work out the variant types`
-
-`Note the Multi Cell Regulatory Features column - click on some marks`
-
-`Click on 'Configure this page' & Enable all regulatory features`
+**_Questions:_**
+> (13) Can you think what problems there might be with using mouse knockout evidence to determine the causal gene?
 
 
-# Summary
-For your region:
 
-> Is the association novel?
 
-> What are the nearby genes?
 
-> Is there any evidence for a particular .....
 
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; causal variant?
 
->  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; causal gene?
-
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; affected tissue?
-
-> What additional investigations/validation might you want to do?
 
 
