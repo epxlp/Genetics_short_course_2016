@@ -43,7 +43,7 @@ Individual missingness >0.05
 
 Run the QC script using `./qc.sh` or `~/pract3_GWAS/scripts/qc.sh`
 Copy the GWAS script using `cp unclean_gwas.sh clean_gwas.sh`
-Edit this file using nano so it reads:
+Edit this file using pico so it reads:
 ```
 #!/bin/bash
 
@@ -65,19 +65,58 @@ Run the script using `./clean_gwas.sh` or `~/pract3_GWAS/scripts/clean_gwas.sh`
 View the results file using `head bmi_clean.assoc.linear.add`
 
 Copy the graphs script using `cp unclean_gwas_graphs.sh clean_graphs.sh`
+Edit this files using pico so it reads:
 
+```
+#!/bin/bash
 
+export R_LIBS="~/R_libs"
+mkdir ~/R_libs
+module load languages/R-3.2.2-ATLAS
+
+# Here we use the gwas_graphs.R script to generate Q-Q and Manhattan plots
+# We pass to R the GWAS results file and the filename for the graphs to be saved to
+
+Rscript ../scripts/gwas_graphs.R ../results/bmi_clean.assoc.linear.add ../output/bmi_clean
+```
+
+Run this scripts using `./clean_gwas_graphs.sh`
+
+![alt text](https://github.com/epxlp/Genetics_short_course_2016/blob/master/pract3_GWAS/answers/bmi_clean_qqplot.png)
+![alt text](https://github.com/epxlp/Genetics_short_course_2016/blob/master/pract3_GWAS/answers/bmi_clean_manhattan.png)
 
 > (5) How many genome-wide significant (p<5x10-8) signals do you have?
+
+```
+[user@newblue4 results]$ awk '$9<0.00000005' bmi_clean.assoc.linear.add | wc -l
+62
+```
 
 62 SNPs meet the p<5x10-8 threshold
 
 > (6) Are these likely to all be independent?
 
+```
+[user@newblue4 results]$ awk '{if(NR==1 || $9<0.00000005) print $0}' bmi_clean.assoc.linear.add
+ CHR                  SNP         BP   A1       TEST    NMISS       BETA         STAT            P
+   1            rs1026997   72516287    T        ADD     8237     0.4356        5.658    1.583e-08
+   1             rs988421   72549836    C        ADD     8237     0.4347        5.647    1.689e-08
+   1            rs1545933   72611715    C        ADD     8237    -0.6325       -6.326    2.641e-10
+   1            rs2821296   72629795    C        ADD     8237     0.4732        6.209     5.58e-10
+   ...
+   ```
+
 Many are nearby SNPs and likely to be in LD, so there is probably only 6 independent associations. 
-In a real GWAS you would run conditional analysis to test for secondary signals at each locus.
+The next step would be to run a conditional analysis to test for secondary signals at each locus.
 
 > (7) What is the top signal?
+
+```
+user@newblue4 results]$ grep -v NA bmi_clean.assoc.linear.add | sort -g -k 9 | head
+ CHR                  SNP         BP   A1       TEST    NMISS       BETA         STAT            P
+  18             rs571312   57839769    A        ADD     8237     0.9811        10.93    1.305e-27
+...
+```
 
 rs571312. On chromosome 18 at position 57839769.
 
