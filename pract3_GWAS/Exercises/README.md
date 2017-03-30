@@ -114,3 +114,7 @@ Look at the results file using the following commands:
 **_Task_**
 
 Complete the results sheet on the next page. Include the top SNP at each locus. You will use this sheet in the 'writing a GWAS abstract' session.
+
+**_Additional Task_**
+
+If you have time you might want to try calculating the variance explained by each SNP. NB: the phenotypic variance is 31.9. If you are proficient in R, you might want to check how you would calculate this yourself.
