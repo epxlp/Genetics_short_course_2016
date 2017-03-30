@@ -21,6 +21,8 @@
 
 > (3) How can we tell there is a problem with this GWAS?
 
+
+
 The QQ plot looks inflated and the lambda (genomic inflation) is 1.09 - suggesting some population stratification problems.
 
 There are some suspiciously good hits on the Manhattan plot.
