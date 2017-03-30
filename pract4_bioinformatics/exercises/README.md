@@ -71,6 +71,9 @@ There are different ways to select your 'credible SNP set'. Here we will just lo
 > (10) There is some evidence that rs1421085 is the causal variant (Claussnitzer et al, 2015, NEJM). Look in more detail at this SNP. Is there anything that stands out for this SNP?
 
 > (11) In the NEJM paper this SNP is described as disrupting ARID5B repressor binding and influencing IRX3 and IRX5 expression. Why is that not seen here? 
+<br>
+<br>
+<br>
 
 # Exercise 4 - Chromatin interaction
 
