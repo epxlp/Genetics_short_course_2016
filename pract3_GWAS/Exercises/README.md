@@ -32,20 +32,21 @@ If you are starting a new PuTTY session you may need reload plink.
 `module load apps/plink2`
 
 #Exercise 1 - Unclean GWAS
-First, we will run a GWAS without doing any cleaning to the dataset.
+First, we will run a GWAS of BMI without doing any cleaning to the dataset.
 
-Take a look at the data `data/geno_unclean.bim` & `.fam`
+Take a look at the genetic data `data/geno_unclean.bim` & `.fam`
+Take a look at the phenotype data `data/phen.txt`
 
 **_Questions:_**
 > (1) How many individuals are there?
 
 > (2) How many SNPs are there?
 
-Run the GWAS (without QC) `./unclean_gwas.sh` – results are in the `output/` directory
+Run the GWAS of BMI (without QC) `./unclean_gwas.sh` – results are in the `output/` directory
 
 Run the script to generate the plots using R `./unclean_gwas_graphs.sh`
 
-Open WINSCP (in windows) and open the graphs you’ve just created.
+Open WINSCP (in windows) and open the graphs you’ve just created (you might need to right click to open)
 
 **_Question:_**
 > (3) How can we tell there is a problem with this GWAS?
