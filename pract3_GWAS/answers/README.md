@@ -41,8 +41,8 @@ SNP missingness >0.05
 Individual missingness >0.05
 ```
 
-Run the QC script using `./qc.sh` or `~/pract3_GWAS/scripts/qc.sh`
-Copy the GWAS script using `cp unclean_gwas.sh clean_gwas.sh`
+Run the QC script using `./qc.sh` or `~/pract3_GWAS/scripts/qc.sh`<br>
+Copy the GWAS script using `cp unclean_gwas.sh clean_gwas.sh`<br>
 Edit this file using pico so it reads:
 ```
 #!/bin/bash
@@ -61,10 +61,10 @@ plink \
 awk 'NR==1 || /ADD/' ../results/bmi_clean.assoc.linear > ../output/bmi_clean.assoc.linear.add
 ```
 
-Run the script using `./clean_gwas.sh` or `~/pract3_GWAS/scripts/clean_gwas.sh`
+Run the script using `./clean_gwas.sh` or `~/pract3_GWAS/scripts/clean_gwas.sh`<br>
 View the results file using `head bmi_clean.assoc.linear.add`
 
-Copy the graphs script using `cp unclean_gwas_graphs.sh clean_graphs.sh`
+Copy the graphs script using `cp unclean_gwas_graphs.sh clean_graphs.sh`<br>
 Edit this files using pico so it reads:
 
 ```
@@ -106,7 +106,7 @@ Run this scripts using `./clean_gwas_graphs.sh`
    ...
    ```
 
-Many are nearby SNPs and likely to be in LD, so there is probably only 6 independent associations. 
+Many are nearby SNPs and likely to be in LD, so there is probably only 6 independent associations. <br>
 The next step would be to run a conditional analysis to test for secondary signals at each locus.
 
 > (7) What is the top signal?
@@ -122,6 +122,6 @@ rs571312. On chromosome 18 at position 57839769.
 
 > (8) How might we go about confirming this finding?
 
-In GWAS we normally seek replication in an independent study. 
+In GWAS we normally seek replication in an independent study. <br>
 Because we only test a few SNPs in replication, a significant result is achieved with a higher p-value.
 We can also use other data resources to check the plausibility of the signals (see next session)
