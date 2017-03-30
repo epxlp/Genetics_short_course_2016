@@ -82,7 +82,8 @@ Now we will make some plots......
 
 Go back to `./scripts`
 
-Copy the `unclean_gwas_graphs.sh` file to a new file named `clean_gwas_graphs.sh`. Edit (using pico) to use the new clean results and output to new files. Run this new script with `./clean_gwas_graphs.sh`
+Copy the `unclean_gwas_graphs.sh` file to a new file named `clean_gwas_graphs.sh`. <br>
+Edit (using pico) to use the new clean results and output to new files. Run this new script with `./clean_gwas_graphs.sh`
 
 Open WINSCP (in windows) and open the graphs you’ve just created.
 
@@ -107,6 +108,13 @@ Look at the results file using the following commands:
 
 > (9) How might we go about confirming this finding?
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 **_Task_**
 
