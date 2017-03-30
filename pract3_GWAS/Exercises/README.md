@@ -60,11 +60,8 @@ There are many steps to a good QC procedure (see Weale 2010. Quality control for
 > (4) For each of the parameters below, which SNPs or individuals do you think should be removed?
 
 >     Minor allele frequency?
-
 >     Hardy Weinberg p-value?
-
 >     SNP missingness?
-
 >     Individual missingness?
 
 Now look at the `qc.sh` script to see the suggested exclusions for this dataset. Run the `qc.sh` script to generate new ‘cleaned’ data files `geno_qc.bed` `.bim` `.fam`
