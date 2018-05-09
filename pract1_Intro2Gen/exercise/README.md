@@ -37,7 +37,7 @@ In order to navigate the file space and look at some files you will need to use 
 
 Now move into the data directory and see what files are there.
 
-#Exercise 1 - Viewing file contents
+# Exercise 1 - Viewing file contents
 Because genetic data is often so big, we don’t typically ‘open’ a file in the same way you might with windows. Instead we tend to view a section of the file using the following commands:
 
 `head {file}`	This shows the top 10 rows of a file
@@ -55,7 +55,7 @@ Another useful command to get a feel for the contents of a file is:
 
 `wc –l {file}`	This tells you the number of rows a file has.
 
-#Exercise 2 - Exploring the genetic files
+# Exercise 2 - Exploring the genetic files
 The basic Plink file format is two files: PED/MAP (see Plink website: zzz.bwh.harvard.edu/plink)
 
 Using the commands above get the answers to the following question:
@@ -100,7 +100,7 @@ Now check your answer, by opening the `chr22_dosage.txt file`, where the data ha
 
 Dosage format will become much more relevant when you learn about imputation later in the course.
 
-#EXTRA - SNPTEST format
+# EXTRA - SNPTEST format
 
 If you think you might use SNPTEST (.gen .sample format) go to this website to read about file formats: stats.ox.ac.uk/~marchini/software/gwas/file_format.html
 
