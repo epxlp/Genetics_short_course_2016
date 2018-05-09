@@ -1,5 +1,6 @@
 # Practical 2: Population Genetics & Association
 # Objectives
+We will use the Plink software (help here: zzz.bwh.harvard.edu/plink) to:
 1. Calculate some simple population genetic parameters
 2. Carry out a single SNP association
 
@@ -34,7 +35,8 @@ These commands are written below with the full paths, you can instead use relati
 
 
 #Exercise 1 - Estimating minor allele frequencies
-Type `plink --bfile ~/pract2_PopgenAssoc/data/chr16 --freq --out ~/pract2_PopgenAssoc/output/chr16_maf`
+Type:
+`plink --bfile ~/pract2_PopgenAssoc/data/chr16 --freq --out ~/pract2_PopgenAssoc/output/chr16_maf`
 
 Once this has run navigate to the correct directory and see what files have been created. 
 
@@ -78,7 +80,8 @@ Instead of typing into the command line you will find this script here:
 
 `~/pract2_PopgenAssoc/scripts/assoc.sh` 
 
-Edit using `pico` and save, before running by typing `./assoc.sh`
+Open the script in a text editor by typing `nano assoc.sh` and when you have made your changes save (by typing `ctrl-X` then `y`).
+Then run the updated script by typing `./assoc.sh`
 
 `plink --bfile ~/pract2_PopgenAssoc/data/chr16 --snp rs3751812 --linear –-ci 0.95 --pheno ~/pract2_PopgenAssoc/data/phen.txt --pheno-name ________ --covar ~/pract2_PopgenAssoc/data/covs.txt --covar-name _________ --out ~/pract2_PopgenAssoc/output/rs3751812_BMI`
 
