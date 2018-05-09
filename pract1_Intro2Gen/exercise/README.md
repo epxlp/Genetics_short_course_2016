@@ -56,18 +56,18 @@ Another useful command to get a feel for the contents of a file is:
 `wc –l {file}`	This tells you the number of rows a file has.
 
 #Exercise 2 - Exploring the genetic files
-The basic Plink file format is two files: PED/MAP
+The basic Plink file format is two files: PED/MAP (see Plink website: zzz.bwh.harvard.edu/plink)
 
 Using the commands above get the answers to the following question:
 
 **_Questions:_**
-> (2) What do you think the 4 columns in a .map file are?
+> (2) What do you think the 4 columns in a .map file are? (TIP: you can check under section 5 on the plink website)
 
 > (3) How many variants are there in this dataset?
 
 > (4) How many individuals are there in this dataset?
 
-> (5) How many columns are there in the .ped file before the genetic data columns? What might these be?
+> (5) How many columns are there in the .ped file before the genetic data columns? What might these be? (TIP: you can check under section 5 on the plink website)
 
 > (6) What are the 2 possible alleles for the first SNP in the dataset? What is the name of this SNP?
 
@@ -100,4 +100,12 @@ Now check your answer, by opening the `chr22_dosage.txt file`, where the data ha
 
 Dosage format will become much more relevant when you learn about imputation later in the course.
 
+#EXTRA - SNPTEST format
+
+If you think you might use SNPTEST (.gen .sample format) go to this website to read about file formats: stats.ox.ac.uk/~marchini/software/gwas/file_format.html
+
+**_Questions:_**
+> (11) What format are genotypes displayed in?
+
+> (12) How can you tell which individual the first three columns of data in the .gen file belong to (how is this different to the Plink format)?
 
