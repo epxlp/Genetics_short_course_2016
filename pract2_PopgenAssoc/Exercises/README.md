@@ -84,7 +84,27 @@ Instead of typing into the command line you will find this script here:
 Open the script in a text editor by typing `nano assoc.sh` and when you have made your changes save (by typing `ctrl-X` then `y`).
 Then run the updated script by typing `./assoc.sh`
 
-`plink --bfile ~/pract2_PopgenAssoc/data/chr16 --snp rs3751812 --linear –-ci 0.95 --pheno ~/pract2_PopgenAssoc/data/phen.txt --pheno-name ________ --covar ~/pract2_PopgenAssoc/data/covs.txt --covar-name _________ --out ~/pract2_PopgenAssoc/output/rs3751812_BMI`
+The script is reproduced here (NB - the backslash enables you to lay the command out over multiple lines):
+
+`plink \
+
+--bfile ~/pract2_PopgenAssoc/data/chr16 \
+
+--snp rs3751812 \
+
+--linear \
+
+–-ci 0.95 \
+
+--pheno ~/pract2_PopgenAssoc/data/phen.txt \
+
+--pheno-name ________ \
+
+--covar ~/pract2_PopgenAssoc/data/covs.txt \
+
+--covar-name _________ \
+
+--out ~/pract2_PopgenAssoc/output/rs3751812_BMI`
 
 <br />
 **_Questions:_**
