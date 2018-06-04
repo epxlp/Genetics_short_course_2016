@@ -4,11 +4,11 @@ We will use the Plink software (help here: www.cog-genomics.org/plink2) to:
 1. Calculate some simple population genetic parameters
 2. Carry out a single SNP association
 
-#Log In
+# Log In
 Log into bluecrystal using PuTTY.
 
 
-#Data
+# Data
 Data and scripts for this practical are available in `/panfs/panasas01/sscm/shortcourse/genetic.epidemiology/pract2_PopgenAssoc/`
 
 For ease, make a copy of this directory in your home folder:
@@ -23,19 +23,19 @@ You should save your output to `~/pract2_PopgenAssoc/output/`.
 
 If you get really stuck, example scripts and ready-made output are available in `~/pract2_PopgenAssoc/results/` (no peaking unless you have to!)
 
-#Loading Plink
+# Loading Plink
 Load Plink by typing `module load apps/plink2`
 
 Now type `plink` and you should see something happen
 
-#Population Genetics
+# Population Genetics
 
 We are going to estimate some population genetic parameters.
 
 These commands are written below with the full paths, you can instead use relative paths if you know where you are (e.g. `./` is the current directory & `../` is the directory above the current directory). This can save a bit on typing.
 
 
-#Exercise 1 - Estimating minor allele frequencies
+# Exercise 1 - Estimating minor allele frequencies
 Type:
 `plink --bfile ~/pract2_PopgenAssoc/data/chr16 --freq --out ~/pract2_PopgenAssoc/output/chr16_maf`
 
@@ -47,7 +47,7 @@ Once this has run navigate to the correct directory and see what files have been
 
 > (2) What is the minor allele and the minor allele frequency for rs758033? (hint: A1 is the minor allele)
 
-#Exercise 2 - Hardy Weinberg Equilbrium
+# Exercise 2 - Hardy Weinberg Equilbrium
 The plink command for estimating Hardy Weinberg Statistics is `--hardy`. Run a plink job for this.
 
 
@@ -56,7 +56,7 @@ The plink command for estimating Hardy Weinberg Statistics is `--hardy`. Run a p
 
 There are many other summary statistics that Plink can estimate. If you have time have a look at the Plink webpage http://pngu.mgh.harvard.edu/~purcell/plink/summary.shtml and try some others out.
 
-#Exercise 3 - Association testing with Plink
+# Exercise 3 - Association testing with Plink
 Here we will just do a single SNP association with BMI. 
 
 This will be a simple linear regression with BMI as the outcome (dependent variable), rs3751812 as the SNP exposure of interest (independent variable) and sex and age as covariates.  
