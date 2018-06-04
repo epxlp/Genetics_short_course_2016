@@ -115,5 +115,3 @@ plink \
 >   PVALUE
 
 > (7) Write a sentence that fully describes this result (think about which allele is the BMI increasing allele).
-
-
