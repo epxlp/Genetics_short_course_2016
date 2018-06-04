@@ -128,3 +128,13 @@ Complete the results sheet on the next page. Include the top SNP at each locus. 
 **_Additional Task_**
 
 If you have time you might want to try calculating the variance explained by each SNP. NB: the phenotypic variance is 31.9. If you are proficient in R, you might want to check how you would calculate this yourself.
+
+# SNPTEST Info
+```
+Another commonly used GWAS softwars is SNPTEST (mathgen.stats.ox.ac.uk/genetics_software/snptest/snptest.html)
+
+INPUT files: .gen (or .bgen)
+             .sample
+             
+CAUTION:
+There are no IDs in the file contianing the genetic data (.gen / .bgen), so the sample file must be kept in the correct order (i.e. the first row in the .sample file is the individual whose genetic data is displayed in the first three columns of the .gen file (as three probabilities). Typically to run a GWAS on your trait you would take the generic .sample file, merge in your phenotype (and covariates) keeping the same row order and output as a new .sample file for analysis.
