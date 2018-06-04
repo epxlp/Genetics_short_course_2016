@@ -28,6 +28,7 @@ Type your `username` `{enter}` `password` `{enter}`
 
 You should now see a command line that looks like: 	`[username@newblue2 ~]$`
 
+
 # Navigating the directories
 When you log onto bluecrystal you land in your home directory (shortcut '~'). You can find the full pathname of your current directory by using the following command:
 
