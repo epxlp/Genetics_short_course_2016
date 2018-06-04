@@ -8,6 +8,7 @@ We will use the Plink software (help here: www.cog-genomics.org/plink2) to:
 Log into bluecrystal using PuTTY.
 
 EXTRA STEP: Run the following command to access a compute node (required for all but the smalles of tasks):
+
 `qsub -I -q teaching -l nodes=1:ppn=1,walltime=02:00:00`
 
 
