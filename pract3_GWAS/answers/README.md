@@ -21,7 +21,7 @@
 
 > (3) How can we tell there is a problem with this GWAS?
 
-![alt text](bmiuncleanqqplot.png)
+![alt text](./bmiuncleanqqplot.png)
 
 The QQ plot looks inflated and the lambda (genomic inflation) is 1.09 - suggesting some population stratification problems.
 
