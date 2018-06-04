@@ -18,9 +18,6 @@ Genetic epidemiologists tend to work in a Linux Environment for several reasons:
 
 - Using a cluster means you can run jobs in parallel (e.g. analyses for each chromosome can be run at the same time, on different nodes).
 
-  
-  
-
 # Logging on
 On a windows machine, from `All Programs` launch the program `PuTTy`.
 
@@ -29,9 +26,6 @@ The Host Name is `bluecrystalp3.acrc.bris.ac.uk` Click `Open`
 Type your `username` `{enter}` `password` `{enter}`
 
 You should now see a command line that looks like: 	`[username@newblue2 ~]$`
-
-  
-  
 
 # Navigating the directories
 When you log onto bluecrystal you land in your home directory (shortcut '~'). You can find the full pathname of your current directory by using the following command:
