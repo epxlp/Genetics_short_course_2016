@@ -118,7 +118,7 @@ Look at the results file using the following commands:
 
 **_Task_**
 
-Complete the results sheet on the next page. Include the top SNP at each locus. You will use this sheet in the 'writing a GWAS abstract' session.
+Complete the results sheet on the next page. Include the top SNP at each locus. 
 
 # Exercise 4 - Generating a Locus Zoom Plot
 We will now generate a locus zoom plot of the signal on chromosome 16.
@@ -139,6 +139,7 @@ Save this plot to your USB stick as you will need to look at this again during t
 
 **_Questions:_**
 > (10) Are all associated SNPs in high LD?
+
 > (11) What genes are nearby?
 
 # SNPTEST Info
