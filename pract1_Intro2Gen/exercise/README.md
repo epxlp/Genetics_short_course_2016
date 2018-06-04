@@ -26,16 +26,27 @@ Type your `username` `{enter}` `password` `{enter}`
 
 You should now see a command line that looks like: 	`[username@newblue2 ~]$`
 
-# Some simple Linux commands
-In order to navigate the file space and look at some files you will need to use some bash commands. Try:
-
-`ls`	This lists the contents of the current directory.
+# Navigating the directories
+When you log onto bluecrystal you land in your home directory (shortcut '~'). You can find the full pathname of your current directory by using the following command:
 
 `pwd`	This returns (prints) the current working directory (wd)
 
-`cd pract1_Intro2gen`	This changes directory. Now use `ls` and `pwd` to see where you are.
+This directory should currently be empty. Check this with the following command:
 
-Now move into the data directory and see what files are there.
+`ls`	This lists the contents of the current directory.
+
+The data necessary for this course is located here: /panfs/panasas01/sscm/shortcourse/genetic.epidemiology. You can change to this directory using the following command.
+
+`cd /panfs/panasas01/sscm/shortcourse/genetic.epidemiology` This changes directory. 
+
+Now use `pwd` and `ls` to see check you are and see what is there.
+
+Now move into the data directory and see what files are there. 
+Note you can use relative paths 
+e.g. `cd pract1_Intro2gen` rather than `cd /panfs/panasas01/sscm/shortcourse/genetic.epidemiology/pract1_Intro2gen`
+and `cd ..` is a shortcut for moving one level up the directory structure.
+Have a play with these commands. Finish in the `pract1_Intro2gen/data` directory
+
 
 # Exercise 1 - Viewing file contents
 Because genetic data is often so big, we don’t typically ‘open’ a file in the same way you might with windows. Instead we tend to view a section of the file using the following commands:
@@ -46,7 +57,7 @@ Because genetic data is often so big, we don’t typically ‘open’ a file in 
 
 `less	{file}` 	Shows the first page. The option `–S` before `{file}` can be really useful. Typing `q` quits less.
 
-Try these commands out on the files in the data directory. 
+Try these commands out on the files in the pract1_Intro2gen/data directory. 
 
 **_Question:_**
 > (1) When is `less –S {file}` a better command to use to have a quick look at a file?
@@ -56,18 +67,18 @@ Another useful command to get a feel for the contents of a file is:
 `wc –l {file}`	This tells you the number of rows a file has.
 
 # Exercise 2 - Exploring the genetic files
-The basic Plink file format is two files: PED/MAP (see Plink website: zzz.bwh.harvard.edu/plink)
+The basic Plink file format is two files: PED/MAP (see Plink website: https://www.cog-genomics.org/plink2)
 
 Using the commands above get the answers to the following question:
 
 **_Questions:_**
-> (2) What do you think the 4 columns in a .map file are? (TIP: you can check under section 5 on the plink website)
+> (2) What do you think the 4 columns in a .map file are? (TIP: you can check on the file formats page on the plink website)
 
 > (3) How many variants are there in this dataset?
 
 > (4) How many individuals are there in this dataset?
 
-> (5) How many columns are there in the .ped file before the genetic data columns? What might these be? (TIP: you can check under section 5 on the plink website)
+> (5) How many columns are there in the .ped file before the genetic data columns? What might these be? (TIP: you can check on the file formats page on the plink website)
 
 > (6) What are the 2 possible alleles for the first SNP in the dataset? What is the name of this SNP?
 
@@ -82,7 +93,7 @@ Plink also has another file format: BED/BIM/FAM
 
 Here the same data is stored in binary format.
 
-Explore the `.bed` `.bim` & `.fam` files
+Explore the `.bed` `.bim` & `.fam` files and read about this format on the plink website.
 
 **_Questions:_**
 > (8) What is the difference between a .bim and a .map file?
