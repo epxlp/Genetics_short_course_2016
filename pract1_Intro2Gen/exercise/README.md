@@ -28,9 +28,9 @@ The Host Name is `bluecrystalp3.acrc.bris.ac.uk` Click `Open`
 Type your `username` `{enter}` `password` `{enter}`
 
 You should now see a command line that looks like: 	`[username@newblue2 ~]$`
-
   
- <br/>
+  
+  
 
 # Navigating the directories
 When you log onto bluecrystal you land in your home directory (shortcut '~'). You can find the full pathname of your current directory by using the following command:
@@ -54,8 +54,9 @@ and `cd ..` is a shortcut for moving one level up the directory structure.
 Have a play with these commands. Finish in the `pract1_Intro2gen/data` directory
   
   
+<br />
   
-
+    
 # Exercise 1 - Viewing file contents
 Because genetic data is often so big, we don’t typically ‘open’ a file in the same way you might with windows. Instead we tend to view a section of the file using the following commands:
 
