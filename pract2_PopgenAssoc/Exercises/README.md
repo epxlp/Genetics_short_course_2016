@@ -66,12 +66,14 @@ Because our dataset contains thousands of SNPs we will use `--snp` to define the
 First use `grep` to have a look at the SNP of interest in the `.bim`, `.freq` and `.hwe` files.
 
 <br />
+
 **_Question:_**
 > (4) What are the two alleles at this SNP? What is the minor allele frequency? Is this SNP in HWE?
 
 Until now we have not used any phenotype data. The phenotype data is stored in `phen.txt` and the covariates in `covs.txt`
 
 <br />
+
 **_Question:_**
 > (5) Have a look at these files and write down the column names for BMI, sex and age (case-sensitive). You will need to know these for the next command.
 
@@ -107,6 +109,7 @@ The script is reproduced here (NB - the backslash enables you to lay the command
 --out ~/pract2_PopgenAssoc/output/rs3751812_BMI`
 
 <br />
+
 **_Questions:_**
 > (6) What are the results?
 
