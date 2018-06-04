@@ -1,29 +1,30 @@
 # Practical 2: Population Genetics & Association
 # Objectives
-We will use the Plink software (help here: zzz.bwh.harvard.edu/plink) to:
+We will use the Plink software (help here: www.cog-genomics.org/plink2) to:
 1. Calculate some simple population genetic parameters
 2. Carry out a single SNP association
 
 #Log In
 Log into bluecrystal using PuTTY.
 
-Run the following command to access a compute node:
-
-`qsub -I -q teaching -l nodes=1:ppn=1,walltime=02:00:00`
 
 #Data
-Data for this practical is available in `~/pract2_PopgenAssoc/data`
+Data and scripts for this practical are available in `/panfs/panasas01/sscm/shortcourse/genetic.epidemiology/pract2_PopgenAssoc/`
 
-Scripts (files containing commands) should be saved in `~/pract2_PopgenAssoc/scripts`
+For ease, make a copy of this directory in your home folder:
 
-You should save your output to `~/pract2_PopgenAssoc/output`
+`cp -r /panfs/panasas01/sscm/shortcourse/genetic.epidemiology/pract2_PopgenAssoc ~/`
 
-If you get really stuck, example scripts and ready-made output are available in `~/pract2_PopgenAssoc/results` (no peaking unless you have to!)
+Now navigate to your home directory and see what is in the `pract2_PopgenAssoc/` directory.
+
+Scripts (files containing commands) will be saved in `~/pract2_PopgenAssoc/data/scripts/`
+
+You should save your output to `~/pract2_PopgenAssoc/output/`.
+
+If you get really stuck, example scripts and ready-made output are available in `~/pract2_PopgenAssoc/results/` (no peaking unless you have to!)
 
 #Loading Plink
-Each time you open a new PuTTY terminal, you may need reload plink.
-
-You can do this by typing `module load apps/plink2`
+Load Plink by typing `module load apps/plink2`
 
 Now type `plink` and you should see something happen
 
