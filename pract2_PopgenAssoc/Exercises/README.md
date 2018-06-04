@@ -41,6 +41,7 @@ These commands are written below with the full paths, you can instead use relati
 
 # Exercise 1 - Estimating minor allele frequencies
 Type:
+
 `plink --bfile ~/pract2_PopgenAssoc/data/chr16 --freq --out ~/pract2_PopgenAssoc/output/chr16_maf`
 
 Once this has run navigate to the correct directory and see what files have been created. 
@@ -69,12 +70,10 @@ Because our dataset contains thousands of SNPs we will use `--snp` to define the
 
 First use `grep` to have a look at the SNP of interest in the `.bim`, `.freq` and `.hwe` files.
 
-
 **_Question:_**
 > (4) What are the two alleles at this SNP? What is the minor allele frequency? Is this SNP in HWE?
 
 Until now we have not used any phenotype data. The phenotype data is stored in `phen.txt` and the covariates in `covs.txt`
-
 
 **_Question:_**
 > (5) Have a look at these files and write down the column names for BMI, sex and age (case-sensitive). You will need to know these for the next command.
