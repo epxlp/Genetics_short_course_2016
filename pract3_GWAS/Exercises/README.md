@@ -19,16 +19,20 @@ Run the following command to access a compute node:<br>
 `qsub -I -q teaching -l nodes=1:ppn=1,walltime=02:00:00`
 
 # Data
-Data for this practical is available in `pract3_GWAS/data`
+Data and scripts for this practical are available in
+`/panfs/panasas01/sscm/shortcourse/genetic.epidemiology/pract3_GWAS/`
 
-Scripts (files containing commands) should be saved in `pract3_GWAS/scripts`
+For ease, make a copy of this directory in your home folder (this may take a few minutes):
+`cp -r /panfs/panasas01/sscm/shortcourse/genetic.epidemiology/pract3_GWAS ~/`
 
-You should save your output to `pract3_GWAS/output`
+Scripts (files containing commands) should be saved in `~/pract3_GWAS/scripts/`
 
-If you get really stuck, example scripts and ready-made output are available in `pract3_GWAS/results` (no peaking unless you have to!)
+You should save your output to `~/pract3_GWAS/output/`
+
+If you get really stuck, example scripts and ready-made output are available in `~/pract3_GWAS/results/` (no peaking unless you have to!)
 
 # Loading Plink
-If you are starting a new PuTTY session you may need reload plink.<br>
+Load Plink
 `module load apps/plink2`
 
 # Exercise 1 - Unclean GWAS
