@@ -142,7 +142,7 @@ id8 id8 0 0 1 -9 2 .....
 ```
 
 
-# EXTRA SNPTEST FORMAT QUESTIONS
+# EXTRA - SNPTEST format questions
 > (11) What format are the genotypes displayed in?
 
 Genotype probabiities. 3 colums per SNP per individual. Corresponsing to the probability that individual has A1A1, A1A2 and A2A2 genotype at that position. The 3 probabilities sum to 1.
