@@ -7,6 +7,9 @@ We will use the Plink software (help here: www.cog-genomics.org/plink2) to:
 # Log In
 Log into bluecrystal using PuTTY.
 
+EXTRA STEP: Run the following command to access a compute node (required for all but the smalles of tasks):
+`qsub -I -q teaching -l nodes=1:ppn=1,walltime=02:00:00`
+
 
 # Data
 Data and scripts for this practical are available in `/panfs/panasas01/sscm/shortcourse/genetic.epidemiology/pract2_PopgenAssoc/`
