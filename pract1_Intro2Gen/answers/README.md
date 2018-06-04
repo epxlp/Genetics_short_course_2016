@@ -141,3 +141,14 @@ id7 id7 0 0 2 -9 1 .....
 id8 id8 0 0 1 -9 2 .....
 ```
 
+
+# EXTRA SNPTEST FORMAT QUESTIONS
+> (11) What format are the genotypes displayed in?
+
+Genotype probabiities. 3 colums per SNP per individual. Corresponsing to the probability that individual has A1A1, A1A2 and A2A2 genotype at that position. The 3 probabilities sum to 1.
+
+> (12) How can you tell which individual the first three columns of data belong to?
+
+There are no individual IDs in the genotype file (as there are in Plink), so you need to refer to the corresponding .sample file. **NB. It is therefore crucial that all individuals with genotpye data are listed in this file, and this file is kept in the right order. This becomes very important when creating a .sample file with your own phenotype data. You must always ensure the number and order of rows in this file remains unchanged!**
+
+
