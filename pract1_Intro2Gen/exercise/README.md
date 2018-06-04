@@ -5,6 +5,7 @@
 3.	View some genetic data
 4.	Understand Plink file formats
 5.	Compare ‘calls’ and ‘dosage’ formats
+(OPTIONAL: understand SNPTEST file formats)
 
 
 # Linux
