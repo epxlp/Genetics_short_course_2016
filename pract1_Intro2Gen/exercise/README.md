@@ -111,7 +111,7 @@ Now check your answer, by opening the `chr22_dosage.txt file`, where the data ha
 
 Dosage format will become much more relevant when you learn about imputation later in the course.
 
-# EXTRA - SNPTEST format
+# EXTRA - SNPTEST format questions
 
 If you think you might use SNPTEST (.gen .sample format) go to this website to read about file formats: stats.ox.ac.uk/~marchini/software/gwas/file_format.html
 
