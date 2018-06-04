@@ -1,7 +1,7 @@
 # Practical 2: Population Genetics & Association
 # Answers
 
-#Exercise 1 - Estimating minor allele frequencies
+# Exercise 1 - Estimating minor allele frequencies
 
 > (1) What are these files, what does each of them contain?
 
@@ -31,7 +31,7 @@ user@newblue4 data]$ grep rs758033 ~/pract2_PopgenAssoc/output/chr16_maf.frq
 
 T 0.25
 
-#Exercise 2 - Hardy Weinberg Equilbrium
+# Exercise 2 - Hardy Weinberg Equilbrium
 
 ```
 [user@newblue4 data]$ plink --bfile ~/pract2_PopgenAssoc/data/chr16 --hardy --out ~/pract2_PopgenAssoc/output/chr16_hardy
@@ -52,7 +52,7 @@ The p-value for the test in 0.03256. This is below 0.05, but given the number of
 
 The null hypothesis is no difference between observed and expected (under HWE). We cannot reject the null hypothesis, so there is no evidence that rs758033 is not in HWE.
 
-#Exercise 3 - Association testing with Plink
+# Exercise 3 - Association testing with Plink
 ```
 [user@newblue4 data]$ grep rs3751812 chr16.bim
 16      rs3751812       0       53818460        T       G
