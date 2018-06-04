@@ -64,7 +64,7 @@ Try these commands out on the files in the pract1_Intro2gen/data directory.
 
 Another useful command to get a feel for the contents of a file is:
 
-`wc –l {file}`	This tells you the number of rows a file has.
+`wc -l {file}`	This tells you the number of rows a file has.
 
 # Exercise 2 - Exploring the genetic files
 The basic Plink file format is two files: PED/MAP (see Plink website: https://www.cog-genomics.org/plink2)
