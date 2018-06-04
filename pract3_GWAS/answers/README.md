@@ -90,7 +90,24 @@ Run this scripts using `./clean_gwas_graphs.sh`
 <br>
 <br>
 
-> (5) How many genome-wide significant (p<5x10-8) signals do you have?
+> (5) How many individuals in the final analysis?
+
+```
+[user@newblue4 results]$ head bmi_clean.assoc.linear.add
+CHR                  SNP         BP   A1       TEST    NMISS       BETA         STAT            P
+   1           rs12562034     768448    A        ADD     8237  -0.006193     -0.04969       0.9604
+   1            rs9442372    1018704    A        ADD     8237     0.1102        1.419        0.156
+   1            rs3737728    1021415    A        ADD     8237    0.09783        1.149       0.2508
+   1            rs6687776    1030565    T        ADD     8237     0.1155        1.085       0.2779
+   1            rs9651273    1031540    A        ADD     8237   0.002348      0.02745       0.9781
+   1            rs4970405    1048955    G        ADD     8237    0.01016        0.081       0.9354
+   1           rs12726255    1049950    G        ADD     8237    0.07016       0.6253       0.5318
+   1           rs11807848    1061166    C        ADD     8237    0.02641       0.3402       0.7337
+   1            rs9442373    1062638    C        ADD     8237    0.04518       0.5878       0.5567
+```
+NMISS column tells us there are 8237 individuals in the analysis.
+
+> (6) How many genome-wide significant (p<5x10-8) signals do you have?
 
 ```
 [user@newblue4 results]$ awk '$9<0.00000005' bmi_clean.assoc.linear.add | wc -l
@@ -99,7 +116,7 @@ Run this scripts using `./clean_gwas_graphs.sh`
 
 62 SNPs meet the p<5x10-8 threshold
 
-> (6) Are these likely to all be independent?
+> (7) Are these likely to all be independent?
 
 ```
 [user@newblue4 results]$ awk '{if(NR==1 || $9<0.00000005) print $0}' bmi_clean.assoc.linear.add
@@ -114,7 +131,7 @@ Run this scripts using `./clean_gwas_graphs.sh`
 Many are nearby SNPs and likely to be in LD, so there is probably only 6 independent associations. <br>
 The next step would be to run a conditional analysis to test for secondary signals at each locus.
 
-> (7) What is the top signal?
+> (8) What is the top signal?
 
 ```
 user@newblue4 results]$ grep -v NA bmi_clean.assoc.linear.add | sort -g -k 9 | head
@@ -125,11 +142,17 @@ user@newblue4 results]$ grep -v NA bmi_clean.assoc.linear.add | sort -g -k 9 | h
 
 rs571312. On chromosome 18 at position 57839769.
 
-> (8) How might we go about confirming this finding?
+> (9) How might we go about confirming this finding?
 
 In GWAS we normally seek replication in an independent study. <br>
 Because we only test a few SNPs in replication, a significant result is achieved with a higher p-value.
 We can also use other data resources to check the plausibility of the signals (see next session)
 
+> ﴾10﴿ Are all associated SNPs in high LD?
 
-Extra task hint: You will need to run additional plink commands in order to have all the necessary information to calculate Rsquared.
+No, some SNPs in low LD ﴾r2<0.2﴿ are also associated ﴾dark blue points﴿.
+This might be a second independent signal or might indicate that rs8050136 is not the causal SNP.
+
+> ﴾11﴿ What genes are nearby?
+
+The signal falls within FTO. There are other genes in the region.
