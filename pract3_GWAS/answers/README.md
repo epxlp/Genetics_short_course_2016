@@ -148,6 +148,10 @@ In GWAS we normally seek replication in an independent study. <br>
 Because we only test a few SNPs in replication, a significant result is achieved with a higher p-value.
 We can also use other data resources to check the plausibility of the signals (see next session)
 
+![alt text](https://github.com/epxlp/Genetics_short_course_2016/blob/master/pract3_GWAS/answers/LZplot.png)
+<br>
+<br>
+
 > ﴾10﴿ Are all associated SNPs in high LD?
 
 No, some SNPs in low LD ﴾r2<0.2﴿ are also associated ﴾dark blue points﴿.
