@@ -88,7 +88,9 @@ Then run the updated script by typing `./assoc.sh`
 
 The script is reproduced here (NB - the backslash enables you to lay the command out over multiple lines):
 
-`plink \
+
+```
+plink \
 
 --bfile ~/pract2_PopgenAssoc/data/chr16 \
 
@@ -106,9 +108,10 @@ The script is reproduced here (NB - the backslash enables you to lay the command
 
 --covar-name _________ \
 
---out ~/pract2_PopgenAssoc/output/rs3751812_BMI`
+--out ~/pract2_PopgenAssoc/output/rs3751812_BMI
 
-<br />
+```
+
 
 **_Questions:_**
 > (6) What are the results?
