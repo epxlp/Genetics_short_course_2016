@@ -23,6 +23,7 @@ Data and scripts for this practical are available in
 `/panfs/panasas01/sscm/shortcourse/genetic.epidemiology/pract3_GWAS/`
 
 For ease, make a copy of this directory in your home folder (this may take a few minutes):
+
 `cp -r /panfs/panasas01/sscm/shortcourse/genetic.epidemiology/pract3_GWAS ~/`
 
 Scripts (files containing commands) should be saved in `~/pract3_GWAS/scripts/`
