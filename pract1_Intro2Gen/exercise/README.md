@@ -61,12 +61,12 @@ Because genetic data is often so big, we don’t typically ‘open’ a file in 
 
 `tail {file}`	This shows the bottom 10 rows of a file
 
-`less	{file}` 	Shows the first page. The option `–S` before `{file}` can be really useful. Typing `q` quits less.
+`less	{file}` 	Shows the first page. The option `-S` before `{file}` can be really useful. Typing `q` quits less.
 
 Try these commands out on the files in the pract1_Intro2gen/data directory. 
 
 **_Question:_**
-> (1) When is `less –S {file}` a better command to use to have a quick look at a file?
+> (1) When is `less -S {file}` a better command to use to have a quick look at a file?
 
 Another useful command to get a feel for the contents of a file is:
 
