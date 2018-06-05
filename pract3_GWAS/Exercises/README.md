@@ -145,5 +145,5 @@ INPUT files: .gen (or .bgen)
              .sample
              
 CAUTION:
-There are no IDs in the file contianing the genetic data (.gen / .bgen), so the sample file must be kept in the correct order (i.e. the first row in the .sample file is the individual whose genetic data is displayed in the first three columns of the .gen file (as three probabilities). Typically to run a GWAS on your trait you would take the generic .sample file, merge in your phenotype (and covariates) keeping the same row order and output as a new .sample file for analysis.
+There are no IDs in the file containing the genetic data (.gen / .bgen), so the sample file must be kept in the correct order (i.e. the first row in the .sample file is the individual whose genetic data is displayed in the first three columns of the .gen file (as three probabilities). Typically to run a GWAS on your trait you would take the generic .sample file, merge in your phenotype (and covariates) keeping the same row order and output as a new .sample file for analysis.
 ```
