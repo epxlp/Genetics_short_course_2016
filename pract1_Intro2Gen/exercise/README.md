@@ -119,7 +119,7 @@ Dosage format will become much more relevant when you learn about imputation lat
 
 # EXTRA - SNPTEST format questions
 
-If you think you might use SNPTEST (.gen .sample format) go to this website to read about file formats: stats.ox.ac.uk/~marchini/software/gwas/file_format.html
+If you think you might use SNPTEST (.gen .sample format) go to this website to read about file formats: http://mathgen.stats.ox.ac.uk/genetics_software/snptest/snptest.html
 
 **_Questions:_**
 > (11) What format are genotypes displayed in?
